@@ -1,0 +1,3752 @@
+Model {
+  Name			  "asknyqmf"
+  Version		  5.0
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  CloseFcn		  "closemodcross"
+  Created		  "Tue Jul 24 16:00:00 2001"
+  Creator		  "gerhard"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bauch"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sat Aug 30 14:40:49 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:21>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  BufferReuse		  on
+  RTWExpressionDepthLimit 5
+  SimulationMode	  "normal"
+  Solver		  "ode45"
+  SolverMode		  "Auto"
+  StartTime		  "0.0"
+  StopTime		  "999999"
+  MaxOrder		  5
+  MaxStep		  "0.05"
+  MinStep		  ".00001"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  RelTol		  "1e-6"
+  AbsTol		  "1e-6"
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  Refine		  "1"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveTime		  off
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  off
+  OutputSaveName	  "yout"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  Decimation		  "1"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  SignalLoggingName	  "sigsOut"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  RTWInlineParameters	  off
+  BlockReductionOpt	  off
+  BooleanDataType	  off
+  ConditionallyExecuteInputs on
+  ParameterPooling	  on
+  OptimizeBlockIOStorage  on
+  ZeroCross		  on
+  AssertionControl	  "UseLocalSettings"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      DigitalClock
+      SampleTime	      "1"
+    }
+    Block {
+      BlockType		      DiscreteFilter
+      Numerator		      "[1]"
+      Denominator	      "[1 2]"
+      SampleTime	      "1"
+      Realization	      "auto"
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ShowAdditionalParam     off
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      ShowAdditionalParam     off
+      AllPortsSameDT	      on
+      OutDataTypeMode	      "Logical (see Advanced Sim. Parameters)"
+      LogicDataType	      "uint(8)"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      RandomNumber
+      Mean		      "0"
+      Variance		      "1"
+      Seed		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Advanced Sim. Parameters)"
+      LogicDataType	      "uint(8)"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+    Block {
+      BlockType		      StateSpace
+      A			      "1"
+      B			      "1"
+      C			      "1"
+      D			      "1"
+      X0		      "0"
+      AbsoluteTolerance	      "auto"
+      Realization	      "auto"
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      ShowAdditionalParam     off
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      UnitDelay
+      X0		      "0"
+      SampleTime	      "1"
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      ZeroOrderHold
+      SampleTime	      "1"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "asknyqmf"
+    Location		    [23, 143, 1035, 419]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "4-ASK"
+      Ports		      [1, 1]
+      Position		      [120, 104, 200, 146]
+      TreatAsAtomicUnit	      off
+      MaskType		      "M-ASK mapping"
+      MaskDescription	      "Map a digital symbol onto an analog\nsignal in "
+"the range [-1, 1] using M-ary\namplitude shift keying modulation mapping."
+      MaskHelp		      "This block maps an input digit signal onto a si"
+"gnal in the range [-1, 1]. The coded signal can be modulated using analog\\nm"
+"odulation blocks. Input digits are in the range [0, M-1], where M is the M-ar"
+"y number. The input symbol interval can be a two-element vector with the seco"
+"nd element being offset. The default value offset is 0. Use the MODMAP functi"
+"on to see the constellation."
+      MaskPromptString	      "M-ary number (input integers in range [0, M-1])"
+":|Input symbol interval and offset (sec):"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "N=@1;td=@2;"
+      MaskInitialization      "Ac=1;Kc=Ac*2/(N-1);"
+      MaskDisplay	      "disp('MASK\\nmapping')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "4|1"
+      System {
+	Name			"4-ASK"
+	Location		[148, 182, 646, 482]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [60, 60, 80, 80]
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [200, 55, 240, 85]
+	  Gain			  "Kc"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Gain diff"
+	  Position		  [200, 126, 235, 154]
+	  Value			  "Ac"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [270, 93, 290, 117]
+	  Inputs		  "+-"
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [120, 54, 155, 86]
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [335, 95, 355, 115]
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 30]
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain diff"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -30]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "4-ASK demap"
+      Ports		      [1, 1]
+      Position		      [870, 109, 940, 151]
+      TreatAsAtomicUnit	      off
+      MaskType		      "MASK demapping"
+      MaskDescription	      "Reverse the MASK mapping process\nConvert [-1 1"
+"] analog signal to [0, M-1] symbols."
+      MaskHelp		      "This block demaps a MASK mapped signal back to "
+"digit symbols. You can place this block after a amplitude demodulation block."
+" The input of this block is an analog signal in the range [-1, 1]. The demodu"
+"lation decides the closest integer fitting in [0,M-1] range. When the input s"
+"ymbol interval is a two-elements vector, the second element is offset. The de"
+"fault offset value is 0."
+      MaskPromptString	      "M-ary number (digit integers in ranger [0, M-1]"
+"):|Output symbol interval and offset (sec):"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "N=@1;td=@2;"
+      MaskInitialization      "Ac=1;sft=[0:N-1]*Ac*2/(N-1)-Ac;"
+      MaskDisplay	      "disp('MASK\\ndemapping')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "4|[1, .9]"
+      System {
+	Name			"4-ASK demap"
+	Location		[617, 158, 1115, 458]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [40, 30, 60, 50]
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  "Abs"
+	  Position		  [245, 37, 280, 63]
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "Minimum"
+	  Ports			  [1, 1]
+	  Position		  [325, 40, 380, 60]
+	  FunctionName		  "arymimai"
+	  Parameters		  "'min'"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Shift key"
+	  Position		  [125, 88, 145, 112]
+	  Value			  "sft"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [190, 33, 210, 62]
+	  Inputs		  "+-"
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [95, 24, 130, 56]
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [410, 40, 430, 60]
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Abs"
+	  SrcPort		  1
+	  DstBlock		  "Minimum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Minimum"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Shift key"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -45]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Abs"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "4-ary source"
+      Ports		      [0, 2]
+      Position		      [40, 101, 70, 154]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      System {
+	Name			"4-ary source"
+	Location		[122, 460, 659, 699]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Bits"
+	  Ports			  [0, 1]
+	  Position		  [25, 48, 85, 92]
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Read from workspace"
+	  MaskDescription	  "Read from a workspace variable at\nsampling"
+" time point."
+	  MaskHelp		  "This block reads from a workspace variable "
+"at a given sample time. The column number is the block output vector length. "
+"When the simulation reaches the end of the variable (eof), the block will cyc"
+"lically output from the first row of the variable or output zeros based on th"
+"e repeat flag entree."
+	  MaskPromptString	  "Variable (column_number=block_output_length"
+"):|Data output sample time (sec):|Repeat flag (1: repeat read, 0: output zero"
+"s after eof).|Initial output:"
+	  MaskStyleString	  "edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on"
+	  MaskCallbackString	  "|||"
+	  MaskEnableString	  "on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on"
+	  MaskVarAliasString	  ",,,"
+	  MaskInitialization	  "var=@1;td=@2;ts=td(1);if (length(td)>=2),of"
+"f=td(2);else off=0;end;cyc=@3;ini=@4;[x,y]=srcsicon(7);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y);disp('Rd wksp')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "randint(2000,1,2)|.5|1|1"
+	  System {
+	    Name		    "Bits"
+	    Location		    [355, 528, 737, 675]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Message source"
+	      Ports		      [1, 1]
+	      Position		      [180, 53, 255, 97]
+	      BackgroundColor	      "yellow"
+	      FunctionName	      "trigwksp"
+	      Parameters	      "var,thd,cyclFlag,ini"
+	      MaskType		      "Read from workspace"
+	      MaskDescription	      "The raising edge of input pulse trigger"
+" the block output the next row from the workspace variable."
+	      MaskHelp		      "This block reads the data from a worksp"
+"ace variable. The output is refreshed at the raising edge of the input pulse."
+	      MaskPromptString	      "Read the variable:|Threshold for the in"
+"put pulse:|Cyclic read variable (1) or amend zeros (0).|Output before first t"
+"rigger:"
+	      MaskStyleString	      "edit,edit,edit,edit"
+	      MaskTunableValueString  "on,on,on,on"
+	      MaskCallbackString      "|||"
+	      MaskEnableString	      "on,on,on,on"
+	      MaskVisibilityString    "on,on,on,on"
+	      MaskToolTipString	      "on,on,on,on"
+	      MaskVarAliasString      ",,,"
+	      MaskInitialization      "var=@1;thd=@2;cyclFlag=@3;ini=@4;"
+	      MaskDisplay	      "disp('Triggered\\nread')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "var|.1|cyc|ini"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Pulses deivide\nsame sample time1"
+	      Ports		      [0, 1]
+	      Position		      [50, 56, 110, 94]
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      MaskType		      "Pulse generator"
+	      MaskDescription	      "Vector pulses with sample rate of each "
+"pulse as Sample_time ./Divider. "
+	      MaskHelp		      "This block generator a vector pulses. T"
+"he output length is the same as the vector defined in \"Divider\". The ith el"
+"ement of the output has the sample time Sample_time/Divider(i). All elements "
+"in \"Divider\" must be integers."
+	      MaskPromptString	      "Sample time (scalar, sec):|Divider (int"
+"eger vector):|Offset (have same dimension as Divider:"
+	      MaskStyleString	      "edit,edit,edit"
+	      MaskTunableValueString  "on,on,on"
+	      MaskCallbackString      "||"
+	      MaskEnableString	      "on,on,on"
+	      MaskVisibilityString    "on,on,on"
+	      MaskToolTipString	      "on,on,on"
+	      MaskVarAliasString      ",,"
+	      MaskInitialization      "samp_time=@1;out_divid=@2;offset=@3;"
+	      MaskDisplay	      "disp('Vector\\nPulse')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "ts|1|off"
+	      System {
+		Name			"Pulses deivide\nsame sample time1"
+		Location		[55, 192, 283, 286]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  "S-Function"
+		  Name			  "S-function1"
+		  Ports			  [0, 1]
+		  Position		  [40, 31, 105, 59]
+		  FunctionName		  "homopuls"
+		  Parameters		  "samp_time, out_divid, offset"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "Outport"
+		  Position		  [160, 35, 180, 55]
+		}
+		Line {
+		  SrcBlock		  "S-function1"
+		  SrcPort		  1
+		  DstBlock		  "Outport"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [295, 65, 315, 85]
+	    }
+	    Line {
+	      SrcBlock		      "Pulses deivide\nsame sample time1"
+	      SrcPort		      1
+	      DstBlock		      "Message source"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Message source"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "D/A "
+	  Ports			  [1, 1]
+	  Position		  [370, 128, 450, 172]
+	  FunctionName		  "simbi2de"
+	  Parameters		  "p"
+	  MaskType		  "Base M vector to decimal integer"
+	  MaskDescription	  "Convert base M integer with each\nposition "
+"in the input vector into scalar decimal output."
+	  MaskHelp		  "This block convert the base M vector into s"
+"calar decimal integer output. Each element of the input vector is one positio"
+"n of the digit of the base M integer. The 1st element in the input vector con"
+"tains the 1's position. The 2nd element in the input vector contains the M's "
+"position."
+	  MaskPromptString	  "Input integer base M:"
+	  MaskStyleString	  "edit"
+	  MaskTunableValueString  "on"
+	  MaskEnableString	  "on"
+	  MaskVisibilityString	  "on"
+	  MaskToolTipString	  "on"
+	  MaskInitialization	  "p=@1;"
+	  MaskDisplay		  "disp('Vec to sca\\nconverter')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "2"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Shift register"
+	  Ports			  [2, 2]
+	  Position		  [120, 133, 200, 177]
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Register-shift"
+	  MaskDescription	  "The rising edge of the 2nd port pulse\ntrig"
+"gers the block to input the 1st port data and to shift the register."
+	  MaskHelp		  "This block stores the scalar input signal f"
+"rom the 1st input port at the rising edge of the pulse from the 2nd port. The"
+" 1st outport outputs a vector with its size the same as the \"Delay steps\" e"
+"ntree of this block. The maximum delay is the register size of this block. Th"
+"e second outport outputs a positive pulse when the register is\\nrefreshed."
+	  MaskPromptString	  "Delay steps (output length is same as this "
+"vector size):|Threshold in detecting the rising edge of the pulse:"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVarAliasString	  ","
+	  MaskInitialization	  "shft_out=@1;thrhld=@2;len_rg=length(@1);[v,"
+"w]=trigicon(0,25,get_param(gcb,'orientation'),2);[x,y]=trigicon(1,75,get_para"
+"m(gcb,'orientation'),2);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y,v,w);disp('Reg. shift'"
+")"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "[2 1]|1"
+	  System {
+	    Name		    "Shift register"
+	    Location		    [19, 610, 374, 740]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [30, 55, 50, 75]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_2"
+	      Position		      [30, 70, 50, 90]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      Ports		      [1, 2]
+	      Position		      [260, 55, 300, 90]
+	      Outputs		      "[len_rg, 1]"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      Ports		      [2, 1]
+	      Position		      [80, 56, 115, 89]
+	      Inputs		      "2"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-function"
+	      Ports		      [1, 1]
+	      Position		      [150, 65, 200, 85]
+	      FunctionName	      "regshift"
+	      Parameters	      "shft_out, thrhld"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [330, 55, 350, 75]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_2"
+	      Position		      [330, 70, 350, 90]
+	      Port		      "2"
+	    }
+	    Line {
+	      SrcBlock		      "in_2"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "out_2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "S-function"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "S-function"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  Position		  [475, 195, 495, 215]
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "clock"
+	  Ports			  [0, 1]
+	  Position		  [35, 147, 70, 183]
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Pulse Generator"
+	  MaskDescription	  "Pulse Generator."
+	  MaskHelp		  "Pulse generator which ensures pulse\\ntrans"
+"itions are hit. Provides a vector of pulses when the height is entered as a v"
+"ector.\\nUnmask to see how it works."
+	  MaskPromptString	  "Pulse period (secs):|Pulse width:|Pulse hei"
+"ght:|Pulse start time:"
+	  MaskStyleString	  "edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on"
+	  MaskCallbackString	  "|||"
+	  MaskEnableString	  "on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on"
+	  MaskVarAliasString	  ",,,"
+	  MaskInitialization	  "Ts=@1; du=@2; ht=@3; stt=@4; ini=ones(lengt"
+"h(ht),1); st1=rem(stt,Ts); st2=rem(stt+du,Ts);if(Ts<=1.2*du),ini=zeros(length"
+"(ht),1);end;"
+	  MaskDisplay		  "plot(0,0,100,100,[90,75,75,60,60,35,35,20,2"
+"0,10],[20,20,80,80,20,20,80,80,20,20])"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  ".5|.25|1|0"
+	  System {
+	    Name		    "clock"
+	    Location		    [158, 441, 759, 682]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Clock
+	      Name		      "Clock1"
+	      Position		      [295, 100, 315, 120]
+	      ShowName		      off
+	      Decimation	      "10"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [25, 30, 45, 50]
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      Position		      [295, 149, 320, 171]
+	      Value		      "stt"
+	    }
+	    Block {
+	      BlockType		      Gain
+	      Name		      "Gain"
+	      Position		      [510, 102, 535, 128]
+	      ShowName		      off
+	      Gain		      "ht"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator"
+	      Ports		      [2, 1]
+	      Position		      [285, 38, 315, 62]
+	      Operator		      "XOR"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator1"
+	      Ports		      [1, 1]
+	      Position		      [355, 38, 385, 62]
+	      Operator		      "NOT"
+	      Inputs		      "1"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      Ports		      [2, 1]
+	      Position		      [455, 105, 480, 125]
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\noperator"
+	      Position		      [370, 102, 400, 133]
+	      ShowName		      off
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [135, 35, 155, 55]
+	      ShowName		      off
+	      Inputs		      "+-"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum1"
+	      Ports		      [2, 1]
+	      Position		      [130, 120, 150, 140]
+	      ShowName		      off
+	      Inputs		      "+-"
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "Unit Delay"
+	      Position		      [145, 75, 195, 95]
+	      Orientation	      "left"
+	      SampleTime	      "[Ts,st1]"
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "Unit Delay1"
+	      Position		      [140, 165, 190, 185]
+	      Orientation	      "left"
+	      X0		      "ini"
+	      SampleTime	      "[Ts,st2]"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [560, 105, 580, 125]
+	      ShowName		      off
+	    }
+	    Line {
+	      SrcBlock		      "Logical\nOperator1"
+	      SrcPort		      1
+	      Points		      [40, 0; 0, 60]
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Logical\nOperator"
+	      SrcPort		      1
+	      DstBlock		      "Logical\nOperator1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -35]
+	      DstBlock		      "Relational\noperator"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Gain"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "Gain"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Relational\noperator"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Clock1"
+	      SrcPort		      1
+	      DstBlock		      "Relational\noperator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Unit Delay"
+	      SrcPort		      1
+	      Points		      [-35, 0; 0, -35]
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      Branch {
+		Points			[70, 0; 0, 40]
+		DstBlock		"Unit Delay"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Logical\nOperator"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      Branch {
+		DstBlock		"Sum"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[20, 0; 0, 85]
+		DstBlock		"Sum1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum1"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      Branch {
+		Points			[55, 0; 0, 45]
+		DstBlock		"Unit Delay1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[90, 0; 0, -75]
+		DstBlock		"Logical\nOperator"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Unit Delay1"
+	      SrcPort		      1
+	      Points		      [-35, 0; 0, -40]
+	      DstBlock		      "Sum1"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "delay"
+	  Ports			  [1, 1]
+	  Position		  [260, 48, 340, 92]
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Multi-step delay"
+	  MaskDescription	  "Output is K-step delay of the input signal."
+	  MaskHelp		  "This block holds the input signal for K ste"
+"ps and then outputs the signal. The delay step cannot be changed during the s"
+"imulation."
+	  MaskPromptString	  "Delay steps (integer):|Sample time (sec):|I"
+"nitial output:"
+	  MaskStyleString	  "edit,edit,edit"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskVarAliasString	  ",,"
+	  MaskInitialization	  "n=@1;ts=@2;if length(ts)<2, ts=[ts 0];end;i"
+"ni=@3;"
+	  MaskDisplay		  "disp('-k\\nz   ')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "2|.5|0"
+	  System {
+	    Name		    "delay"
+	    Location		    [12, 432, 357, 702]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [20, 80, 40, 100]
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [120, 230, 140, 250]
+	      Value		      "ini"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      Position		      [15, 194, 100, 216]
+	      Value		      "n*ts(1)+ts(2)"
+	    }
+	    Block {
+	      BlockType		      DigitalClock
+	      Name		      "Digital Clock"
+	      Position		      [60, 140, 95, 170]
+	      SampleTime	      "ts"
+	    }
+	    Block {
+	      BlockType		      DiscreteFilter
+	      Name		      "K-step\ndelay"
+	      Position		      [60, 70, 185, 110]
+	      Numerator		      "[zeros(1,n), 1]"
+	      Denominator	      "1"
+	      SampleTime	      "ts"
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator"
+	      Position		      [150, 168, 180, 192]
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [270, 114, 295, 146]
+	      Threshold		      ".1"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [325, 120, 345, 140]
+	    }
+	    Line {
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      DstBlock		      "K-step\ndelay"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "K-step\ndelay"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, 30]
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [95, 0; 0, -100]
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Digital Clock"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, 20]
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [10, 0; 0, -20]
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Relational\nOperator"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, -50]
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "hold"
+	  Ports			  [3, 2]
+	  Position		  [260, 138, 340, 182]
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Triggered buffer down"
+	  MaskDescription	  "Rising edge of the 2nd port triggers 1st po"
+"rt vector signal in. Rising edge of the 3rd port triggers 1st outport signal "
+"out."
+	  MaskHelp		  "The block refreshes its registers with the "
+"vector input from the 1st inport at the rising edge of the 2nd inport pulse. "
+"The 1st outport outputs the elements of the registers starting with the given"
+" initial index. The rising edge of the 3rd inport pulse triggers the 1st outp"
+"ut to output the register value with the index increasing the increment value"
+". The second outport outputs a spike pulse when the internal register is refr"
+"eshed."
+	  MaskPromptString	  "Input signal vector size:|Initial index (in"
+"teger vector):|Increment for each index (integer vector):|Trigger threshold:|"
+"When index exceed register size, 1: cyclic out, 0: zero out:"
+	  MaskStyleString	  "edit,edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on"
+	  MaskCallbackString	  "||||"
+	  MaskEnableString	  "on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on"
+	  MaskVarAliasString	  ",,,,"
+	  MaskInitialization	  "in_size=@1;ini_idx=@2;idx_inc=@3;thrshld=@4"
+";cycl_flag=@5;out_size=length(ini_idx);[v,w]=trigicon(0,25,get_param(gcb,'ori"
+"entation'),2);[x,y]=trigicon(1,75,get_param(gcb,'orientation'),2);[u,z]=trigi"
+"con(0,50,get_param(gcb,'orientation'),2);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y,v,w,u,z);disp('Buffer "
+"dwn')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "2|[1 0]|[0 0]|1|0"
+	  System {
+	    Name		    "hold"
+	    Location		    [22, 74, 460, 244]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [15, 55, 35, 75]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_2"
+	      Position		      [40, 70, 60, 90]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_3"
+	      Position		      [65, 85, 85, 105]
+	      Port		      "3"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      Ports		      [1, 2]
+	      Position		      [290, 62, 330, 98]
+	      Outputs		      "[out_size 1]"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      Ports		      [3, 1]
+	      Position		      [110, 59, 140, 101]
+	      Inputs		      "[in_size 1 1]"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-function"
+	      Ports		      [1, 1]
+	      Position		      [185, 70, 235, 90]
+	      FunctionName	      "regdown"
+	      Parameters	      "ini_idx, idx_inc, thrshld, cycl_flag"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [390, 60, 410, 80]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_2"
+	      Position		      [355, 80, 375, 100]
+	      Port		      "2"
+	    }
+	    Line {
+	      SrcBlock		      "S-function"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "S-function"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "in_2"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "out_2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "in_3"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "binary"
+	  Position		  [480, 60, 500, 80]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Symbol"
+	  Position		  [480, 140, 500, 160]
+	  Port			  "2"
+	}
+	Line {
+	  SrcBlock		  "Bits"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "delay"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Shift register"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Shift register"
+	  SrcPort		  2
+	  Points		  [20, 0]
+	  Branch {
+	    Points		    [0, -5]
+	    DstBlock		    "hold"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 10]
+	    DstBlock		    "hold"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "clock"
+	  SrcPort		  1
+	  DstBlock		  "Shift register"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "hold"
+	  SrcPort		  1
+	  DstBlock		  "D/A "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Shift register"
+	  SrcPort		  1
+	  DstBlock		  "hold"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "delay"
+	  SrcPort		  1
+	  DstBlock		  "binary"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "D/A "
+	  SrcPort		  1
+	  DstBlock		  "Symbol"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "hold"
+	  SrcPort		  2
+	  Points		  [10, 0; 0, 35]
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "two bits are combined to a 4-ary symbol.\nM"
+"SB first"
+	  Position		  [267, 7]
+	  VerticalAlignment	  "top"
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Channel"
+      Ports		      [1, 1]
+      Position		      [480, 114, 560, 156]
+      SourceBlock	      "librnew/Channel"
+      SourceType	      "AWGN channel, fixed parameter"
+      m			      "0"
+      variance		      "0.001"
+      s			      "12345"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      Position		      [245, 220, 265, 240]
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock1"
+      Position		      [495, 20, 515, 40]
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Error rate"
+      Ports		      [2]
+      Position		      [910, 225, 990, 265]
+      Orientation	      "down"
+      CopyFcn		      "sbiterr([],[],[],'CopyBlock')"
+      DeleteFcn		      "sbiterr([],[],[],'DeleteBlock')"
+      LoadFcn		      "sbiterr([],[],[],'LoadBlock')"
+      StartFcn		      "sbiterr([],[],[],'Start')"
+      StopFcn		      "sbiterr([],[],[],'Stop')"
+      NameChangeFcn	      "sbiterr([],[],[],'NameChange')"
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      MaskType		      "Symbol/bit error counter"
+      MaskDescription	      "Use the input data from the 1st port as the ref"
+"erence signal to detect the number of errors and error rate of the 2nd signal"
+"."
+      MaskHelp		      "The signal from the first port must be a scalar"
+". The second input port can be a vector with a delay to the first port signal"
+". The comparison happens only at the sampling point."
+      MaskPromptString	      "Bit per symbol:|Number of digits on display:|De"
+"lay between 1st port and 2nd port:|Sample time (sec):"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVarAliasString      ",,,"
+      MaskInitialization      "K=@1;num_lin=@2;TDelay=@3;Sample=@4;"
+      MaskDisplay	      "disp('Error\\nmeter')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "2|10|12|1"
+      System {
+	Name			"Error rate"
+	Location		[255, 368, 509, 510]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [15, 45, 35, 65]
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_2"
+	  Position		  [15, 60, 35, 80]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [65, 46, 100, 79]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-function"
+	  Ports			  [1]
+	  Position		  [130, 52, 195, 78]
+	  FunctionName		  "sbiterr"
+	  Parameters		  "num_lin, K, TDelay, Sample"
+	}
+	Line {
+	  SrcBlock		  "in_2"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "S-function"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "Fcn"
+      Position		      [285, 217, 355, 243]
+      ShowName		      off
+      Expr		      "cos(4*pi*u)"
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "Fcn1"
+      Position		      [535, 17, 630, 43]
+      ShowName		      off
+      Expr		      "2*cos(4*pi*u)"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      Position		      [795, 117, 820, 143]
+      Gain		      "1/20"
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Product"
+      Ports		      [2, 1]
+      Position		      [380, 117, 405, 148]
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Product1"
+      Ports		      [2, 1]
+      Position		      [660, 112, 685, 143]
+      ShowName		      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Raised-Cosine\nreceive filter"
+      Ports		      [1, 1]
+      Position		      [700, 108, 780, 152]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      MaskType		      "R-C filter"
+      MaskDescription	      "Design a raised cosine filter and use it to fil"
+"ter the input signal."
+      MaskHelp		      "This block designs a raised cosine filter using"
+" the specified parameter. The filter is used to filter the input signal. You "
+"can optionally use the sinc filter in the filtering computation."
+      MaskPromptString	      "Symbol interval (sec):|Computation sampling tim"
+"e (sec):|Filter rolloff factor:|Delay step (integer to multiply symbol interv"
+"al):|Filter type (FIR or IIR) / (Normal or Sqrt):|With or without sinc filter"
+" (1 or 0, suggest 1):"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on,on,on"
+      MaskCallbackString      "|||||"
+      MaskEnableString	      "on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,"
+      MaskInitialization      "td=@1;if length(td)>1,off=td(2);td=td(1);else,o"
+"ff=0;end;ts=@2;R=@3;delay=@4;fil=@5;[num,den]=rcosine(1/td(1),1/ts(1),fil,R,d"
+"elay);x=@6/2;"
+      MaskDisplay	      "disp('R-C\\nfilter')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "1|.05|.5|6|'FIR'|0"
+      System {
+	Name			"Raised-Cosine\nreceive filter"
+	Location		[131, 545, 589, 761]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [35, 30, 55, 50]
+	}
+	Block {
+	  BlockType		  DiscreteFilter
+	  Name			  "Filter"
+	  Position		  [255, 31, 310, 69]
+	  Numerator		  "num"
+	  Denominator		  "den"
+	  SampleTime		  "ts"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Memory Impulse"
+	  Ports			  [2, 1]
+	  Position		  [155, 30, 225, 70]
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Impulse"
+	  MaskDescription	  "1/sinc filter:"
+	  MaskHelp		  "When the threshold is greater than zero, th"
+"is block outputs an impulse signal, which begins at the raising edge of the s"
+"econd input and lasts the holding time. The impulse holds a constant amplitud"
+"e, which equals the amplitude of the first input at the begining of the impul"
+"se. A clock raising edge will trigger next impulse. When the threshold is les"
+"s or equal to zero, this block faithfully outputs the first input."
+	  MaskPromptString	  "Holding time:|Threshold for clock pulse: "
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVarAliasString	  ","
+	  MaskInitialization	  "ts=@1;thr=@2;x=thr>0;"
+	  MaskDisplay		  "disp('1/sinc')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "ts|x"
+	  System {
+	    Name		    "Memory Impulse"
+	    Location		    [541, 520, 939, 745]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [35, 185, 55, 205]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_2"
+	      Position		      [25, 30, 45, 50]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [210, 155, 230, 175]
+	      Value		      "x"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      Ports		      [2, 1]
+	      Position		      [155, 90, 180, 110]
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [295, 124, 320, 156]
+	      Threshold		      ".5"
+	    }
+	    Block {
+	      BlockType		      ZeroOrderHold
+	      Name		      "Zero-Order\nHold"
+	      Position		      [205, 84, 240, 116]
+	      SampleTime	      "ts"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "discrete\nRising edge\ndetector"
+	      Ports		      [1, 1]
+	      Position		      [65, 26, 120, 54]
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      MaskType		      "Edge Detection"
+	      MaskDescription	      "Rising edge detection:"
+	      MaskHelp		      "When the input signal rising edge passe"
+"d the given shreshold, this block outputs one, otherwise outputs zero."
+	      MaskPromptString	      "Threshold:|Sampling time:"
+	      MaskStyleString	      "edit,edit"
+	      MaskTunableValueString  "on,on"
+	      MaskCallbackString      "|"
+	      MaskEnableString	      "on,on"
+	      MaskVisibilityString    "on,on"
+	      MaskToolTipString	      "on,on"
+	      MaskVarAliasString      ","
+	      MaskInitialization      "thld=@1;ts=@2;"
+	      MaskDisplay	      "disp('Edge\\nDetector')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "thr|ts"
+	      System {
+		Name			"discrete\nRising edge\ndetector"
+		Location		[419, 521, 808, 713]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "in_1"
+		  Position		  [10, 15, 30, 35]
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator"
+		  Position		  [135, 18, 165, 42]
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  Position		  [200, 88, 230, 112]
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator2"
+		  Position		  [265, 23, 295, 47]
+		  Operator		  ">"
+		}
+		Block {
+		  BlockType		  UnitDelay
+		  Name			  "Unit Delay"
+		  Position		  [120, 87, 170, 103]
+		  SampleTime		  "ts"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "one1"
+		  Position		  [30, 135, 60, 155]
+		  Value			  "thld"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "out_1"
+		  Position		  [340, 25, 360, 45]
+		}
+		Line {
+		  SrcBlock		  "in_1"
+		  SrcPort		  1
+		  Points		  [10, 0]
+		  Branch {
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 70]
+		    DstBlock		    "Unit Delay"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Unit Delay"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "one1"
+		  SrcPort		  1
+		  Points		  [35, 0]
+		  Branch {
+		    Points		    [0, -110]
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    2
+		  }
+		  Branch {
+		    Points		    [80, 0; 0, -40]
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  Points		  [5, 0; 0, -60]
+		  DstBlock		  "Relational\nOperator2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator2"
+		  SrcPort		  1
+		  DstBlock		  "out_1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [355, 130, 375, 150]
+	    }
+	    Line {
+	      SrcBlock		      "in_2"
+	      SrcPort		      1
+	      DstBlock		      "discrete\nRising edge\ndetector"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "discrete\nRising edge\ndetector"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, 55]
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, -25]
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      Points		      [35, 0]
+	      Branch {
+		Points			[185, 0]
+		DstBlock		"Switch"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[0, -90]
+		DstBlock		"Product"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "Zero-Order\nHold"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Zero-Order\nHold"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, 30]
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Pulses deivide\nsame sample time1"
+	  Ports			  [0, 1]
+	  Position		  [35, 71, 95, 109]
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Pulse generator"
+	  MaskDescription	  "Vector pulses with sample rate of each puls"
+"e as Sample_time ./Divider. "
+	  MaskHelp		  "This block generator a vector pulses. The o"
+"utput length is the same as the vector defined in \"Divider\". The ith elemen"
+"t of the output has the sample time Sample_time/Divider(i). All elements in "
+"\"Divider\" must be integers."
+	  MaskPromptString	  "Sample time (scalar, sec):|Divider (integer"
+" vector):|Offset (have same dimension as Divider:"
+	  MaskStyleString	  "edit,edit,edit"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskVarAliasString	  ",,"
+	  MaskInitialization	  "samp_time=@1;out_divid=@2;offset=@3;"
+	  MaskDisplay		  "disp('Vector\\nPulse')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "td|1|off"
+	  System {
+	    Name		    "Pulses deivide\nsame sample time1"
+	    Location		    [55, 192, 283, 286]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-function1"
+	      Ports		      [0, 1]
+	      Position		      [40, 31, 105, 59]
+	      FunctionName	      "homopuls"
+	      Parameters	      "samp_time, out_divid, offset"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Outport"
+	      Position		      [160, 35, 180, 55]
+	    }
+	    Line {
+	      SrcBlock		      "S-function1"
+	      SrcPort		      1
+	      DstBlock		      "Outport"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [330, 40, 350, 60]
+	}
+	Line {
+	  SrcBlock		  "Filter"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Memory Impulse"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Memory Impulse"
+	  SrcPort		  1
+	  DstBlock		  "Filter"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pulses deivide\nsame sample time1"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -30]
+	  DstBlock		  "Memory Impulse"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Raised-Cosine\ntransmit filter"
+      Ports		      [1, 1]
+      Position		      [215, 103, 295, 147]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      MaskType		      "R-C filter"
+      MaskDescription	      "Design a raised cosine filter and use it to fil"
+"ter the input signal."
+      MaskHelp		      "This block designs a raised cosine filter using"
+" the specified parameter. The filter is used to filter the input signal. You "
+"can optionally use the sinc filter in the filtering computation."
+      MaskPromptString	      "Symbol interval (sec):|Computation sampling tim"
+"e (sec):|Filter rolloff factor:|Delay step (integer to multiply symbol interv"
+"al):|Filter type (FIR or IIR) / (Normal or Sqrt):|With or without sinc filter"
+" (1 or 0, suggest 1):"
+      MaskStyleString	      "edit,edit,edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on,on,on"
+      MaskCallbackString      "|||||"
+      MaskEnableString	      "on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,"
+      MaskInitialization      "td=@1;if length(td)>1,off=td(2);td=td(1);else,o"
+"ff=0;end;ts=@2;R=@3;delay=@4;fil=@5;[num,den]=rcosine(1/td(1),1/ts(1),fil,R,d"
+"elay);x=@6/2;"
+      MaskDisplay	      "disp('R-C\\nfilter')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "1|.05|.5|6|'FIR'|1"
+      System {
+	Name			"Raised-Cosine\ntransmit filter"
+	Location		[131, 545, 589, 761]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [35, 30, 55, 50]
+	}
+	Block {
+	  BlockType		  DiscreteFilter
+	  Name			  "Filter"
+	  Position		  [255, 31, 310, 69]
+	  Numerator		  "num"
+	  Denominator		  "den"
+	  SampleTime		  "ts"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Memory Impulse"
+	  Ports			  [2, 1]
+	  Position		  [155, 30, 225, 70]
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Impulse"
+	  MaskDescription	  "1/sinc filter:"
+	  MaskHelp		  "When the threshold is greater than zero, th"
+"is block outputs an impulse signal, which begins at the raising edge of the s"
+"econd input and lasts the holding time. The impulse holds a constant amplitud"
+"e, which equals the amplitude of the first input at the begining of the impul"
+"se. A clock raising edge will trigger next impulse. When the threshold is les"
+"s or equal to zero, this block faithfully outputs the first input."
+	  MaskPromptString	  "Holding time:|Threshold for clock pulse: "
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVarAliasString	  ","
+	  MaskInitialization	  "ts=@1;thr=@2;x=thr>0;"
+	  MaskDisplay		  "disp('1/sinc')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "ts|x"
+	  System {
+	    Name		    "Memory Impulse"
+	    Location		    [541, 520, 939, 745]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [35, 185, 55, 205]
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_2"
+	      Position		      [25, 30, 45, 50]
+	      Port		      "2"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [210, 155, 230, 175]
+	      Value		      "x"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      Ports		      [2, 1]
+	      Position		      [155, 90, 180, 110]
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [295, 124, 320, 156]
+	      Threshold		      ".5"
+	    }
+	    Block {
+	      BlockType		      ZeroOrderHold
+	      Name		      "Zero-Order\nHold"
+	      Position		      [205, 84, 240, 116]
+	      SampleTime	      "ts"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "discrete\nRising edge\ndetector"
+	      Ports		      [1, 1]
+	      Position		      [65, 26, 120, 54]
+	      ShowPortLabels	      off
+	      TreatAsAtomicUnit	      off
+	      MaskType		      "Edge Detection"
+	      MaskDescription	      "Rising edge detection:"
+	      MaskHelp		      "When the input signal rising edge passe"
+"d the given shreshold, this block outputs one, otherwise outputs zero."
+	      MaskPromptString	      "Threshold:|Sampling time:"
+	      MaskStyleString	      "edit,edit"
+	      MaskTunableValueString  "on,on"
+	      MaskCallbackString      "|"
+	      MaskEnableString	      "on,on"
+	      MaskVisibilityString    "on,on"
+	      MaskToolTipString	      "on,on"
+	      MaskVarAliasString      ","
+	      MaskInitialization      "thld=@1;ts=@2;"
+	      MaskDisplay	      "disp('Edge\\nDetector')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "thr|ts"
+	      System {
+		Name			"discrete\nRising edge\ndetector"
+		Location		[419, 521, 808, 713]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "in_1"
+		  Position		  [10, 15, 30, 35]
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator"
+		  Position		  [135, 18, 165, 42]
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  Position		  [200, 88, 230, 112]
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator2"
+		  Position		  [265, 23, 295, 47]
+		  Operator		  ">"
+		}
+		Block {
+		  BlockType		  UnitDelay
+		  Name			  "Unit Delay"
+		  Position		  [120, 87, 170, 103]
+		  SampleTime		  "ts"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "one1"
+		  Position		  [30, 135, 60, 155]
+		  Value			  "thld"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "out_1"
+		  Position		  [340, 25, 360, 45]
+		}
+		Line {
+		  SrcBlock		  "in_1"
+		  SrcPort		  1
+		  Points		  [10, 0]
+		  Branch {
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, 70]
+		    DstBlock		    "Unit Delay"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Unit Delay"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "one1"
+		  SrcPort		  1
+		  Points		  [35, 0]
+		  Branch {
+		    Points		    [0, -110]
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    2
+		  }
+		  Branch {
+		    Points		    [80, 0; 0, -40]
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  Points		  [5, 0; 0, -60]
+		  DstBlock		  "Relational\nOperator2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Relational\nOperator2"
+		  SrcPort		  1
+		  DstBlock		  "out_1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [355, 130, 375, 150]
+	    }
+	    Line {
+	      SrcBlock		      "in_2"
+	      SrcPort		      1
+	      DstBlock		      "discrete\nRising edge\ndetector"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "discrete\nRising edge\ndetector"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, 55]
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, -25]
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      Points		      [35, 0]
+	      Branch {
+		Points			[185, 0]
+		DstBlock		"Switch"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[0, -90]
+		DstBlock		"Product"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "Zero-Order\nHold"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Zero-Order\nHold"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, 30]
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Pulses deivide\nsame sample time1"
+	  Ports			  [0, 1]
+	  Position		  [35, 71, 95, 109]
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Pulse generator"
+	  MaskDescription	  "Vector pulses with sample rate of each puls"
+"e as Sample_time ./Divider. "
+	  MaskHelp		  "This block generator a vector pulses. The o"
+"utput length is the same as the vector defined in \"Divider\". The ith elemen"
+"t of the output has the sample time Sample_time/Divider(i). All elements in "
+"\"Divider\" must be integers."
+	  MaskPromptString	  "Sample time (scalar, sec):|Divider (integer"
+" vector):|Offset (have same dimension as Divider:"
+	  MaskStyleString	  "edit,edit,edit"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskVarAliasString	  ",,"
+	  MaskInitialization	  "samp_time=@1;out_divid=@2;offset=@3;"
+	  MaskDisplay		  "disp('Vector\\nPulse')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "td|1|off"
+	  System {
+	    Name		    "Pulses deivide\nsame sample time1"
+	    Location		    [55, 192, 283, 286]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "S-function1"
+	      Ports		      [0, 1]
+	      Position		      [40, 31, 105, 59]
+	      FunctionName	      "homopuls"
+	      Parameters	      "samp_time, out_divid, offset"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Outport"
+	      Position		      [160, 35, 180, 55]
+	    }
+	    Line {
+	      SrcBlock		      "S-function1"
+	      SrcPort		      1
+	      DstBlock		      "Outport"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [330, 40, 350, 60]
+	}
+	Line {
+	  SrcBlock		  "Filter"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Memory Impulse"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Memory Impulse"
+	  SrcPort		  1
+	  DstBlock		  "Filter"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pulses deivide\nsame sample time1"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -30]
+	  DstBlock		  "Memory Impulse"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Rolloff"
+      Ports		      []
+      Position		      [205, 76, 312, 96]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      OpenFcn		      "setrobin"
+      FontSize		      12
+      FontAngle		      "italic"
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      MaskType		      "rolloff"
+      MaskDisplay	      "disp('Rolloff-Factor')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Rolloff"
+	Location		[136, 230, 381, 439]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"cyan"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "a(t)"
+      Ports		      [1]
+      Position		      [120, 225, 150, 255]
+      NamePlacement	      "alternate"
+      Location		      [224, 436, 1147, 536]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "25.000000"
+      YMin		      "-3"
+      YMax		      "3"
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "binary\ndata"
+      Ports		      [1]
+      Position		      [175, 20, 205, 50]
+      Location		      [224, 337, 1147, 437]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "25.000000"
+      YMin		      "-3"
+      YMax		      "3"
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "constellation"
+      Ports		      []
+      Position		      [15, 29, 100, 66]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      OpenFcn		      "cplotask(4)"
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      MaskType		      "constellation"
+      MaskDisplay	      "disp('Signal Space \\n Constellation')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"constellation"
+	Location		[74, 73, 1338, 1015]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"cyan"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "noise variance"
+      Ports		      []
+      Position		      [469, 75, 575, 99]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      OpenFcn		      "setnoise"
+      FontSize		      12
+      FontAngle		      "italic"
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      MaskType		      "noise"
+      MaskDisplay	      "disp('Noise variance')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"noise variance"
+	Location		[136, 230, 381, 439]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"cyan"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "received signal r(t)"
+      Ports		      [1]
+      Position		      [575, 225, 605, 255]
+      Orientation	      "down"
+      Location		      [163, 594, 1088, 759]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "25.000000"
+      YMin		      "-1.5"
+      YMax		      "1.5"
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "receiver\ndiagrams"
+      Ports		      [1]
+      Position		      [865, 15, 920, 55]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      MaskType		      "Diagrams"
+      MaskDescription	      "Eye pattern, signal space trajectory and scatte"
+"r plot."
+      MaskPromptString	      "Plot start time:|Samples per time slot (2*T):|D"
+"ecision offset:"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVarAliasString      ",,"
+      MaskVariables	      "starttime=@1;anzahl=@2;offset=@3;"
+      MaskInitialization      " [x, y] = srcsicon(10);"
+      MaskDisplay	      "plot(0,0,100,100,x,y)"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "12|40|0"
+      System {
+	Name			"receiver\ndiagrams"
+	Location		[638, 564, 1007, 805]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [35, 40, 55, 60]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [35, 130, 55, 150]
+	  Value			  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [130, 130, 150, 150]
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Eye pattern\nreceiver"
+	  Ports			  [1]
+	  Position		  [275, 37, 330, 73]
+	  CopyFcn		  "eyesampl([],[],[],'CopyBlock')"
+	  DeleteFcn		  "eyesampl([],[],[],'DeleteBlock')"
+	  LoadFcn		  "eyesampl([],[],[],'LoadBlock')"
+	  StartFcn		  "eyesampl([],[],[],'Start')"
+	  StopFcn		  "eyesampl([],[],[],'Stop')"
+	  NameChangeFcn		  "eyesampl([],[],[],'NameChange')"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Eye-diagram/scatter plot"
+	  MaskDescription	  "Produce eye-pattern diagram and/or scatter "
+"plot."
+	  MaskHelp		  "This plot opens one, or two plots by assign"
+"ing the line type parameters. The scatter plot point is selected by the decis"
+"ion point in the first parameter entry. A decision line is drawn in the eye-p"
+"attern diagram. The plot is updated at the plot update sample time point."
+	  MaskPromptString	  "[Symbol interval, plot offset, decision poi"
+"nt offset]:|Lower and upper bound of in-coming signal (1x2 vector):|Number of"
+" saved traces:|Line-type for eye-pattern diagram (0 for no plot):|Line-type f"
+"or scatter plot (0 for no plot):|Plot update sample time:"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||"
+	  MaskEnableString	  "on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on"
+	  MaskVarAliasString	  ",,,,,"
+	  MaskInitialization	  "time_range=@1;boundary=@2;kept_length=@3;ey"
+"e_line=@4;scatter_line=@5;two_d_line=@6;[x,y]=srcsicon(10);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "[2 0 1+offset]|[-1.5 1.5]|0|'w-/r-'|0|2/anz"
+"ahl"
+	  System {
+	    Name		    "Eye pattern\nreceiver"
+	    Location		    [121, 409, 416, 595]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [75, 80, 95, 100]
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Plot1"
+	      Ports		      [1]
+	      Position		      [130, 70, 200, 110]
+	      FunctionName	      "eyesampl"
+	      Parameters	      "time_range, boundary, kept_length, eye_"
+"line, scatter_line, two_d_line"
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      DstBlock		      "Plot1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [185, 36, 220, 69]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  Ports			  [2, 1]
+	  Position		  [185, 96, 220, 129]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Scatter plot\nreceiver"
+	  Ports			  [1]
+	  Position		  [275, 173, 330, 207]
+	  CopyFcn		  "eyesampl([],[],[],'CopyBlock')"
+	  DeleteFcn		  "eyesampl([],[],[],'DeleteBlock')"
+	  LoadFcn		  "eyesampl([],[],[],'LoadBlock')"
+	  StartFcn		  "eyesampl([],[],[],'Start')"
+	  StopFcn		  "eyesampl([],[],[],'Stop')"
+	  NameChangeFcn		  "eyesampl([],[],[],'NameChange')"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Eye-diagram/scatter plot"
+	  MaskDescription	  "Produce eye-pattern diagram and/or scatter "
+"plot."
+	  MaskHelp		  "This plot opens one, or two plots by assign"
+"ing the line type parameters. The scatter plot point is selected by the decis"
+"ion point in the first parameter entry. A decision line is drawn in the eye-p"
+"attern diagram. The plot is updated at the plot update sample time point."
+	  MaskPromptString	  "[Symbol interval, plot offset, decision poi"
+"nt offset]:|Lower and upper bound of in-coming signal (1x2 vector):|Number of"
+" saved traces:|Line-type for eye-pattern diagram (0 for no plot):|Line-type f"
+"or scatter plot (0 for no plot):|Plot update sample time:"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||"
+	  MaskEnableString	  "on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on"
+	  MaskVarAliasString	  ",,,,,"
+	  MaskInitialization	  "time_range=@1;boundary=@2;kept_length=@3;ey"
+"e_line=@4;scatter_line=@5;two_d_line=@6;[x,y]=srcsicon(10);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "[1 .5 .999]|[-1.5 1.5]|0|0|'b.'|[.5 offset]"
+	  System {
+	    Name		    "Scatter plot\nreceiver"
+	    Location		    [165, 242, 460, 428]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [75, 80, 95, 100]
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Plot1"
+	      Ports		      [1]
+	      Position		      [130, 70, 200, 110]
+	      FunctionName	      "eyesampl"
+	      Parameters	      "time_range, boundary, kept_length, eye_"
+"line, scatter_line, two_d_line"
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      DstBlock		      "Plot1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Step
+	  Name			  "Step input"
+	  Position		  [35, 85, 55, 105]
+	  Time			  "starttime"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [110, 44, 135, 76]
+	  Threshold		  "1"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Trajectory\nreceiver"
+	  Ports			  [1]
+	  Position		  [275, 107, 330, 143]
+	  CopyFcn		  "eyediasi([],[],[],'CopyBlock')"
+	  DeleteFcn		  "eyediasi([],[],[],'DeleteBlock')"
+	  LoadFcn		  "eyediasi([],[],[],'LoadBlock')"
+	  StartFcn		  "eyediasi([],[],[],'Start')"
+	  StopFcn		  "eyediasi([],[],[],'Stop')"
+	  NameChangeFcn		  "eyediasi([],[],[],'NameChange')"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Eye-diagram/scatter plot"
+	  MaskDescription	  "Produce eye-pattern diagram/scatter\nplot/x"
+"-y plot with the rising edge of the second input as the decision line."
+	  MaskHelp		  "This plot opens one, two, or three plots by"
+" assigning the line type parameters. The scatter plot point is selected by th"
+"e rising edge of a trigger signal. A decision line is drawn at the rising edg"
+"e of the trigger signal."
+	  MaskPromptString	  "Eye-pattern plot time frame:|Lower and uppe"
+"r bound of in-coming signal (1x2 vector):|Number of saved traces:|Line-type f"
+"or eye-pattern diagram (0 for no plot):|Line-type for scatter plot (0 for no "
+"plot):|Line-type for x-y plot (0 for no plot):"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||"
+	  MaskEnableString	  "on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on"
+	  MaskVarAliasString	  ",,,,,"
+	  MaskInitialization	  "time_range=@1;boundary=@2;kept_length=@3;ey"
+"e_line=@4;scatter_line=@5;two_d_line=@6;[x,y]=srcsicon(10);[v,w]=trigicon(0,2"
+"5,get_param(gcb,'orientation'),2);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y,v,w);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "[2 0 1]|[-1.5 1.5]|0|0|0|'g-'"
+	  System {
+	    Name		    "Trajectory\nreceiver"
+	    Location		    [165, 242, 460, 428]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [15, 55, 35, 75]
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [15, 110, 45, 140]
+	      Value		      "0"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      Ports		      [2, 1]
+	      Position		      [65, 70, 100, 105]
+	      Inputs		      "2"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Plot1"
+	      Ports		      [1]
+	      Position		      [130, 70, 200, 110]
+	      FunctionName	      "eyediasi"
+	      Parameters	      "time_range, boundary, kept_length, eye_"
+"line, scatter_line, two_d_line"
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Plot1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, 15]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Eye pattern\nreceiver"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Step input"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -35]
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [10, 0]
+	    DstBlock		    "Trajectory\nreceiver"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Scatter plot\nreceiver"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -20]
+	  Branch {
+	    Points		    [0, -75]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Mux1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "Mux1"
+	    DstPort		    1
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "s(t)"
+      Ports		      [1]
+      Position		      [310, 170, 340, 200]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      Location		      [224, 533, 1147, 633]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "25.000000"
+      YMin		      "-1.5"
+      YMax		      "1.5"
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "s_r(t)"
+      Ports		      [1]
+      Position		      [825, 185, 855, 215]
+      Orientation	      "down"
+      Location		      [223, 794, 1147, 894]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "25.000000"
+      YMin		      "-1.5"
+      YMax		      "1.5"
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "sink signal v(t)"
+      Ports		      [1]
+      Position		      [995, 115, 1025, 145]
+      Location		      [223, 794, 1147, 894]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "25.000000"
+      YMin		      "-3"
+      YMax		      "3"
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "transmitted signal u(t)"
+      Ports		      [1]
+      Position		      [420, 225, 450, 255]
+      Orientation	      "down"
+      Location		      [224, 631, 1147, 731]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "25.000000"
+      YMin		      "-1.5"
+      YMax		      "1.5"
+      DataFormat	      "Array"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "transmitter\ndiagrams"
+      Ports		      [1]
+      Position		      [345, 15, 400, 55]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      MaskType		      "Diagrams"
+      MaskDescription	      "Eye pattern,  signal-space trajectory and scatt"
+"er plot"
+      MaskPromptString	      "Plot start time:|samples per time slot|decision"
+" offset"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVarAliasString      ",,"
+      MaskVariables	      "starttime=@1;anzahl=@2;offset=@3;"
+      MaskInitialization      " [x, y] = srcsicon(10);"
+      MaskDisplay	      "plot(0,0,100,100,x,y)"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "6|40|0"
+      System {
+	Name			"transmitter\ndiagrams"
+	Location		[475, 310, 844, 551]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [35, 40, 55, 60]
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [35, 130, 55, 150]
+	  Value			  "Inf"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [130, 130, 150, 150]
+	  Value			  "0"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Eye pattern \ntransmitter"
+	  Ports			  [1]
+	  Position		  [275, 37, 330, 73]
+	  CopyFcn		  "eyesampl([],[],[],'CopyBlock')"
+	  DeleteFcn		  "eyesampl([],[],[],'DeleteBlock')"
+	  LoadFcn		  "eyesampl([],[],[],'LoadBlock')"
+	  StartFcn		  "eyesampl([],[],[],'Start')"
+	  StopFcn		  "eyesampl([],[],[],'Stop')"
+	  NameChangeFcn		  "eyesampl([],[],[],'NameChange')"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Eye-diagram/scatter plot"
+	  MaskDescription	  "Produce eye-pattern diagram and/or scatter "
+"plot."
+	  MaskHelp		  "This plot opens one, or two plots by assign"
+"ing the line type parameters. The scatter plot point is selected by the decis"
+"ion point in the first parameter entry. A decision line is drawn in the eye-p"
+"attern diagram. The plot is updated at the plot update sample time point."
+	  MaskPromptString	  "[Symbol interval, plot offset, decision poi"
+"nt offset]:|Lower and upper bound of in-coming signal (1x2 vector):|Number of"
+" saved traces:|Line-type for eye-pattern diagram (0 for no plot):|Line-type f"
+"or scatter plot (0 for no plot):|Plot update sample time:"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||"
+	  MaskEnableString	  "on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on"
+	  MaskVarAliasString	  ",,,,,"
+	  MaskInitialization	  "time_range=@1;boundary=@2;kept_length=@3;ey"
+"e_line=@4;scatter_line=@5;two_d_line=@6;[x,y]=srcsicon(10);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "[2 0 1+offset]|[-1.5 1.5]|0|'w-/r-'|0|2/anz"
+"ahl"
+	  System {
+	    Name		    "Eye pattern \ntransmitter"
+	    Location		    [121, 409, 416, 595]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [75, 80, 95, 100]
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Plot1"
+	      Ports		      [1]
+	      Position		      [130, 70, 200, 110]
+	      FunctionName	      "eyesampl"
+	      Parameters	      "time_range, boundary, kept_length, eye_"
+"line, scatter_line, two_d_line"
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      DstBlock		      "Plot1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [185, 36, 220, 69]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  Ports			  [2, 1]
+	  Position		  [185, 96, 220, 129]
+	  Inputs		  "2"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Scatter plot\ntransmitter"
+	  Ports			  [1]
+	  Position		  [275, 173, 330, 207]
+	  CopyFcn		  "eyesampl([],[],[],'CopyBlock')"
+	  DeleteFcn		  "eyesampl([],[],[],'DeleteBlock')"
+	  LoadFcn		  "eyesampl([],[],[],'LoadBlock')"
+	  StartFcn		  "eyesampl([],[],[],'Start')"
+	  StopFcn		  "eyesampl([],[],[],'Stop')"
+	  NameChangeFcn		  "eyesampl([],[],[],'NameChange')"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Eye-diagram/scatter plot"
+	  MaskDescription	  "Produce eye-pattern diagram and/or scatter "
+"plot."
+	  MaskHelp		  "This plot opens one, or two plots by assign"
+"ing the line type parameters. The scatter plot point is selected by the decis"
+"ion point in the first parameter entry. A decision line is drawn in the eye-p"
+"attern diagram. The plot is updated at the plot update sample time point."
+	  MaskPromptString	  "[Symbol interval, plot offset, decision poi"
+"nt offset]:|Lower and upper bound of in-coming signal (1x2 vector):|Number of"
+" saved traces:|Line-type for eye-pattern diagram (0 for no plot):|Line-type f"
+"or scatter plot (0 for no plot):|Plot update sample time:"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||"
+	  MaskEnableString	  "on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on"
+	  MaskVarAliasString	  ",,,,,"
+	  MaskInitialization	  "time_range=@1;boundary=@2;kept_length=@3;ey"
+"e_line=@4;scatter_line=@5;two_d_line=@6;[x,y]=srcsicon(10);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "[1 .5 .999]|[-1.5 1.5]|0|0|'b.'|[.5 offset]"
+	  System {
+	    Name		    "Scatter plot\ntransmitter"
+	    Location		    [165, 242, 460, 428]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [75, 80, 95, 100]
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Plot1"
+	      Ports		      [1]
+	      Position		      [130, 70, 200, 110]
+	      FunctionName	      "eyesampl"
+	      Parameters	      "time_range, boundary, kept_length, eye_"
+"line, scatter_line, two_d_line"
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      DstBlock		      "Plot1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Step
+	  Name			  "Step input"
+	  Position		  [35, 85, 55, 105]
+	  Time			  "starttime"
+	  SampleTime		  "1"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [110, 44, 135, 76]
+	  Threshold		  "1"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Trajectory\ntransmitter"
+	  Ports			  [1]
+	  Position		  [275, 107, 330, 143]
+	  CopyFcn		  "eyediasi([],[],[],'CopyBlock')"
+	  DeleteFcn		  "eyediasi([],[],[],'DeleteBlock')"
+	  LoadFcn		  "eyediasi([],[],[],'LoadBlock')"
+	  StartFcn		  "eyediasi([],[],[],'Start')"
+	  StopFcn		  "eyediasi([],[],[],'Stop')"
+	  NameChangeFcn		  "eyediasi([],[],[],'NameChange')"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  MaskType		  "Eye-diagram/scatter plot"
+	  MaskDescription	  "Produce eye-pattern diagram/scatter\nplot/x"
+"-y plot with the rising edge of the second input as the decision line."
+	  MaskHelp		  "This plot opens one, two, or three plots by"
+" assigning the line type parameters. The scatter plot point is selected by th"
+"e rising edge of a trigger signal. A decision line is drawn at the rising edg"
+"e of the trigger signal."
+	  MaskPromptString	  "Eye-pattern plot time frame:|Lower and uppe"
+"r bound of in-coming signal (1x2 vector):|Number of saved traces:|Line-type f"
+"or eye-pattern diagram (0 for no plot):|Line-type for scatter plot (0 for no "
+"plot):|Line-type for x-y plot (0 for no plot):"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||"
+	  MaskEnableString	  "on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on"
+	  MaskVarAliasString	  ",,,,,"
+	  MaskInitialization	  "time_range=@1;boundary=@2;kept_length=@3;ey"
+"e_line=@4;scatter_line=@5;two_d_line=@6;[x,y]=srcsicon(10);[v,w]=trigicon(0,2"
+"5,get_param(gcb,'orientation'),2);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y,v,w);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "[2 0 1]|[-1.5 1.5]|0|0|0|'g-'"
+	  System {
+	    Name		    "Trajectory\ntransmitter"
+	    Location		    [165, 242, 460, 428]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [15, 55, 35, 75]
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [15, 110, 45, 140]
+	      Value		      "0"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      Ports		      [2, 1]
+	      Position		      [65, 70, 100, 105]
+	      Inputs		      "2"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Plot1"
+	      Ports		      [1]
+	      Position		      [130, 70, 200, 110]
+	      FunctionName	      "eyediasi"
+	      Parameters	      "time_range, boundary, kept_length, eye_"
+"line, scatter_line, two_d_line"
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, 15]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Plot1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "Mux1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -20]
+	  Branch {
+	    Points		    [0, -75]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Mux1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [10, 0]
+	    DstBlock		    "Trajectory\ntransmitter"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Scatter plot\ntransmitter"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Step input"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -35]
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Eye pattern \ntransmitter"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      DstBlock		      "Fcn"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Product"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	DstBlock		"transmitted signal u(t)"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Channel"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "4-ASK demap"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	DstBlock		"sink signal v(t)"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Error rate"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Fcn"
+      SrcPort		      1
+      Points		      [0, -90]
+      DstBlock		      "Product"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "4-ary source"
+      SrcPort		      2
+      Points		      [0, -15; 20, 0]
+      Branch {
+	DstBlock		"4-ASK"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 115]
+	Branch {
+	  Points		  [0, 25; 800, 0; 0, -55]
+	  DstBlock		  "Error rate"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "a(t)"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Clock1"
+      SrcPort		      1
+      DstBlock		      "Fcn1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	DstBlock		"4-ASK demap"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -95]
+	DstBlock		"receiver\ndiagrams"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"s_r(t)"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Channel"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	DstBlock		"Product1"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"received signal r(t)"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Fcn1"
+      SrcPort		      1
+      Points		      [5, 0; 0, 90]
+      DstBlock		      "Product1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "4-ary source"
+      SrcPort		      1
+      Points		      [35, 0; 0, -80]
+      DstBlock		      "binary\ndata"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "4-ASK"
+      SrcPort		      1
+      DstBlock		      "Raised-Cosine\ntransmit filter"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Raised-Cosine\ntransmit filter"
+      SrcPort		      1
+      Points		      [25, 0]
+      Branch {
+	DstBlock		"Product"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"s(t)"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -90]
+	DstBlock		"transmitter\ndiagrams"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Product1"
+      SrcPort		      1
+      DstBlock		      "Raised-Cosine\nreceive filter"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Raised-Cosine\nreceive filter"
+      SrcPort		      1
+      DstBlock		      "Gain"
+      DstPort		      1
+    }
+  }
+}

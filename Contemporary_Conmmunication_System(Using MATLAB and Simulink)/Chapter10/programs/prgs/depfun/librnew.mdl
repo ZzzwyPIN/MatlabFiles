@@ -1,0 +1,2317 @@
+Library {
+  Name			  "librnew"
+  Version		  4.00
+  LibraryLinkDisplay	  "none"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Mar 10 17:37:34 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Jul 21 15:19:25 2002"
+  ModelVersionFormat	  "1.%<AutoIncrement:15>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWRetainRTWFile	  off
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "librnew"
+    Location		    [396, 55, 896, 356]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "74"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "4-ASK"
+      Ports		      [1, 1]
+      Position		      [295, 94, 375, 136]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "M-ASK mapping"
+      MaskDescription	      "Map a digital symbol onto an analog\nsignal in "
+"the range [-1, 1] using M-ary\namplitude shift keying modulation mapping."
+      MaskHelp		      "This block maps an input digit signal onto a si"
+"gnal in the range [-1, 1]. The coded signal can be modulated using analog\\nm"
+"odulation blocks. Input digits are in the range [0, M-1], where M is the M-ar"
+"y number. The input symbol interval can be a two-element vector with the seco"
+"nd element being offset. The default value offset is 0. Use the MODMAP functi"
+"on to see the constellation."
+      MaskPromptString	      "M-ary number (input integers in range [0, M-1])"
+":|Input symbol interval and offset (sec):"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "N=@1;td=@2;"
+      MaskInitialization      "Ac=1;Kc=Ac*2/(N-1);"
+      MaskDisplay	      "disp('MASK\\nmapping')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "4|1"
+      MaskVariableAliases     ","
+      System {
+	Name			"4-ASK"
+	Location		[148, 182, 646, 482]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [60, 60, 80, 80]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [200, 55, 240, 85]
+	  Gain			  "Kc"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Gain diff"
+	  Position		  [200, 126, 235, 154]
+	  Value			  "Ac"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [270, 93, 290, 117]
+	  IconShape		  "rectangular"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [120, 54, 155, 86]
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [335, 95, 355, 115]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 30]
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain diff"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -30]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "4-ASK demap"
+      Ports		      [1, 1]
+      Position		      [305, 184, 375, 226]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MASK demapping"
+      MaskDescription	      "Reverse the MASK mapping process\nConvert [-1 1"
+"] analog signal to [0, M-1] symbols."
+      MaskHelp		      "This block demaps a MASK mapped signal back to "
+"digit symbols. You can place this block after a amplitude demodulation block."
+" The input of this block is an analog signal in the range [-1, 1]. The demodu"
+"lation decides the closest integer fitting in [0,M-1] range. When the input s"
+"ymbol interval is a two-elements vector, the second element is offset. The de"
+"fault offset value is 0."
+      MaskPromptString	      "M-ary number (digit integers in ranger [0, M-1]"
+"):|Output symbol interval and offset (sec):"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "N=@1;td=@2;"
+      MaskInitialization      "Ac=1;sft=[0:N-1]*Ac*2/(N-1)-Ac;"
+      MaskDisplay	      "disp('MASK\\ndemapping')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "4|[1, .9]"
+      MaskVariableAliases     ","
+      System {
+	Name			"4-ASK demap"
+	Location		[617, 158, 1115, 458]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [40, 30, 60, 50]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  "Abs"
+	  Position		  [245, 37, 280, 63]
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "Minimum"
+	  Ports			  [1, 1]
+	  Position		  [325, 40, 380, 60]
+	  FunctionName		  "arymimai"
+	  Parameters		  "'min'"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Shift key"
+	  Position		  [125, 88, 145, 112]
+	  Value			  "sft"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [190, 33, 210, 62]
+	  IconShape		  "rectangular"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [95, 24, 130, 56]
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [410, 40, 430, 60]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Abs"
+	  SrcPort		  1
+	  DstBlock		  "Minimum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Minimum"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Shift key"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -45]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Abs"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "ButterworthLP filter"
+      Ports		      [1, 1]
+      Position		      [145, 280, 220, 330]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Lowpass Butterworth filter"
+      MaskPromptString	      "Cutoff frequency (rad/s)|Filter order"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "n=@2;"
+      MaskInitialization      "z = @1 * [];\np = @1 * exp(i*(pi*(1:2:n-1)/(2*n"
+") + pi/2));\np = [p; conj(p)];\np = p(:);\nif rem(n,2)==1   % n is odd\n    p"
+" = [p; -1];\nend\nk = real(prod(-p));"
+      MaskDisplay	      "plot(0,0,100,100,[90,10,10],[10,10,90],[70,40,9"
+"],[10,70,70])"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "5|4"
+      MaskVariableAliases     ","
+      System {
+	Name			"ButterworthLP filter"
+	Location		[433, 403, 972, 660]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  Position		  [110, 103, 140, 117]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  ZeroPole
+	  Name			  "Zero-Pole"
+	  Position		  [250, 92, 310, 128]
+	  Zeros			  "z"
+	  Poles			  "p"
+	  Gain			  "k"
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [380, 103, 410, 117]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Zero-Pole"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Pole"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Channel"
+      Ports		      [1, 1]
+      Position		      [155, 28, 235, 72]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "AWGN channel, fixed parameter"
+      MaskDescription	      "Additive white Gaussian noise channel\nwith fix"
+"ed mean and variance."
+      MaskHelp		      "This block adds white Gaussian noise to the inp"
+"ut signal. The mean and the variance can be a scalar or vector with the same "
+"length as the input signal."
+      MaskPromptString	      "Mean value:|Variance (std^2):|Initial Seed:"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "m=@1;variance=@2;s=@3;"
+      MaskInitialization      "[m,variance,s]=gwnoise(m,variance,s);\n"
+      MaskDisplay	      "plot(0,0,100,100);\ndisp('AWGN')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "0|0.00010|12345"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"Channel"
+	Location		[43, 129, 305, 275]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [45, 10, 65, 30]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Gaussian noise\ngenerator"
+	  Ports			  [0, 1]
+	  Position		  [25, 48, 105, 92]
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Gaussian noise generator"
+	  MaskDescription	  "Generate Gaussian distributed noise with\ng"
+"iven mean and variance value."
+	  MaskHelp		  "When the mean value and seed are vectors, t"
+"he output of this block is a vector. The length of the vector is the same as "
+"the length of the mean value vector or the length of the seed. When the varia"
+"nce entry is a vector, the variance is a diagonal matrix."
+	  MaskPromptString	  "Mean value:|Variance (vector or matrix):|In"
+"itial seed:"
+	  MaskStyleString	  "edit,edit,edit"
+	  MaskTunableValueString  "on,on,on"
+	  MaskCallbackString	  "||"
+	  MaskEnableString	  "on,on,on"
+	  MaskVisibilityString	  "on,on,on"
+	  MaskToolTipString	  "on,on,on"
+	  MaskVariables		  "m=@1;variance=@2;s=@3;"
+	  MaskInitialization	  "[m,variance,s]=gwnoise(m,variance,s);[x,y]="
+"srcsicon(3);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y);disp('Gaussian')"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "m|variance|s"
+	  MaskVariableAliases	  ",,"
+	  System {
+	    Name		    "Gaussian noise\ngenerator"
+	    Location		    [22, 119, 370, 243]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "automatic"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [140, 20, 160, 40]
+	      Value		      "m"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      StateSpace
+	      Name		      "Matrix\nGain"
+	      Position		      [140, 61, 165, 89]
+	      A			      "[]"
+	      B			      "[]"
+	      C			      "[]"
+	      D			      "K"
+	      X0		      "0"
+	      AbsoluteTolerance	      "auto"
+	      Realization	      "auto"
+	      MaskType		      "Matrix Gain"
+	      MaskDescription	      "Matrix Gain."
+	      MaskHelp		      "Multiplies input vector by entered matr"
+"ix to produce output vector (y=Au)."
+	      MaskPromptString	      "Gain matrix:"
+	      MaskStyleString	      "edit"
+	      MaskTunableValueString  "on"
+	      MaskEnableString	      "on"
+	      MaskVisibilityString    "on"
+	      MaskToolTipString	      "on"
+	      MaskInitialization      "K = @1;"
+	      MaskDisplay	      "disp('K')"
+	      MaskIconFrame	      on
+	      MaskIconOpaque	      on
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      MaskValueString	      "variance"
+	    }
+	    Block {
+	      BlockType		      RandomNumber
+	      Name		      "Random\nNumber"
+	      Position		      [35, 57, 80, 93]
+	      Mean		      "0"
+	      Variance		      "1"
+	      Seed		      "s"
+	      SampleTime	      "0"
+	      VectorParams1D	      on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [220, 60, 240, 80]
+	      IconShape		      "rectangular"
+	      Inputs		      "++"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "out_1"
+	      Position		      [285, 60, 305, 80]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [25, 0; 0, 35]
+	      DstBlock		      "Sum"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "out_1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Matrix\nGain"
+	      SrcPort		      1
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Random\nNumber"
+	      SrcPort		      1
+	      DstBlock		      "Matrix\nGain"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [150, 55, 170, 75]
+	  IconShape		  "rectangular"
+	  Inputs		  "++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [200, 55, 220, 75]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 40]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gaussian noise\ngenerator"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Error rate"
+      Ports		      [2]
+      Position		      [290, 25, 370, 65]
+      Orientation	      "down"
+      CopyFcn		      "sbiterr([],[],[],'CopyBlock')"
+      DeleteFcn		      "sbiterr([],[],[],'DeleteBlock')"
+      LoadFcn		      "sbiterr([],[],[],'LoadBlock')"
+      StartFcn		      "sbiterr([],[],[],'Start')"
+      StopFcn		      "sbiterr([],[],[],'Stop')"
+      NameChangeFcn	      "sbiterr([],[],[],'NameChange')"
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Symbol/bit error counter"
+      MaskDescription	      "Use the input data from the 1st port as the ref"
+"erence signal to detect the number of errors and error rate of the 2nd signal"
+"."
+      MaskHelp		      "The signal from the first port must be a scalar"
+". The second input port can be a vector with a delay to the first port signal"
+". The comparison happens only at the sampling point."
+      MaskPromptString	      "Bit per symbol:|Number of digits on display:|De"
+"lay between 1st port and 2nd port:|Sample time (sec):"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskInitialization      "K=@1;num_lin=@2;TDelay=@3;Sample=@4;"
+      MaskDisplay	      "disp('Error\\nmeter')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "1|10|12|1"
+      MaskVariableAliases     ",,,"
+      System {
+	Name			"Error rate"
+	Location		[255, 368, 509, 510]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [15, 45, 35, 65]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_2"
+	  Position		  [15, 60, 35, 80]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [65, 46, 100, 79]
+	  Inputs		  "2"
+	  DisplayOption		  "none"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-function"
+	  Ports			  [1]
+	  Position		  [130, 52, 195, 78]
+	  FunctionName		  "sbiterr"
+	  Parameters		  "num_lin, K, TDelay, Sample"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "S-function"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_2"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "MASK demap"
+      Ports		      [1, 1]
+      Position		      [135, 183, 215, 227]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MASK demap"
+      MaskDescription	      "Reverse the MASK mapping process\nConvert [-1 1"
+"] analog signal to [0, M-1] symbols."
+      MaskHelp		      "This block demaps a MASK mapped signal back to "
+"digit symbols. You can place this block after a amplitude demodulation block."
+" The input of this block is an analog signal in the range [-1, 1]. The demodu"
+"lation decides the closest integer fitting in [0,M-1] range. When the input s"
+"ymbol interval is a two-elements vector, the second element is offset. The de"
+"fault offset value is 0."
+      MaskPromptString	      "M-ary number (digit integers in ranger [0, M-1]"
+"):|Output symbol interval and offset (sec):"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskInitialization      "N=@1;Ac=1;sft=[0:N-1]*Ac*2/(N-1)-Ac;td=@2;"
+      MaskDisplay	      "disp('MASK\\ndemap')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "4|[1, .9]"
+      MaskVariableAliases     ","
+      System {
+	Name			"MASK demap"
+	Location		[80, 334, 521, 474]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [30, 35, 50, 55]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Abs
+	  Name			  "Abs"
+	  Position		  [235, 42, 270, 68]
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "Minimum"
+	  Ports			  [1, 1]
+	  Position		  [315, 45, 370, 65]
+	  FunctionName		  "arymimai"
+	  Parameters		  "'min'"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Shift key"
+	  Position		  [115, 93, 135, 117]
+	  Value			  "sft"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [180, 38, 200, 67]
+	  IconShape		  "rectangular"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [85, 29, 120, 61]
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [400, 45, 420, 65]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Abs"
+	  SrcPort		  1
+	  DstBlock		  "Minimum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Minimum"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Shift key"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -45]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Abs"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "MASK map"
+      Ports		      [1, 1]
+      Position		      [130, 93, 210, 137]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MASK map"
+      MaskDescription	      "Map a digital symbol onto an analog\nsignal in "
+"the range [-1, 1] using M-ary\namplitude shift keying modulation mapping."
+      MaskHelp		      "This block maps an input digit signal onto a si"
+"gnal in the range [-1, 1]. The coded signal can be modulated using analog\\nm"
+"odulation blocks. Input digits are in the range [0, M-1], where M is the M-ar"
+"y number. The input symbol interval can be a two-element vector with the seco"
+"nd element being offset. The default value offset is 0. Use the MODMAP functi"
+"on to see the constellation."
+      MaskPromptString	      "M-ary number (input integers in range [0, M-1])"
+":|Input symbol interval and offset (sec):"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskInitialization      "N=@1;Ac=1;Kc=Ac*2/(N-1);td=@2;"
+      MaskDisplay	      "disp('MASK\\nmap')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "4|1"
+      MaskVariableAliases     ","
+      System {
+	Name			"MASK map"
+	Location		[520, 162, 902, 335]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [40, 30, 60, 50]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [180, 25, 220, 55]
+	  Gain			  "Kc"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Gain diff"
+	  Position		  [180, 96, 215, 124]
+	  Value			  "Ac"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [250, 63, 270, 87]
+	  IconShape		  "rectangular"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [100, 24, 135, 56]
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [315, 65, 335, 85]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 30]
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Gain diff"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -30]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "QPSK"
+      Ports		      [1, 2]
+      Position		      [435, 185, 510, 225]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MPSK"
+      MaskDescription	      "QASK mapping with circle constellation. The con"
+"stellation is defined in NIC, RIC and PIC."
+      MaskHelp		      "This block maps a digital signal onto in-phase "
+"and quadratic components, which are outputs in the first and second output po"
+"rt respectively. The circle constellation is defined in NIC, RIC, and PIC. Th"
+"e input symbol interval can be a two-element vector with the second element b"
+"eing offset. The default value offset is 0. Use the MODMAP function to see th"
+"e constellation."
+      MaskPromptString	      "Number of symbols in each circle NIC:|Radii in "
+"each circle RIC:|Phase shift in each circle PIC (rad):|Symbol interval and of"
+"fset (sec):"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVariables	      "N=@1;A=@2;P=@3;td=@4;"
+      MaskInitialization      "y1=apkconst(N,A,P);y1=[y1;y1];y1=y1(:);y2=imag("
+"y1);y1=real(y1);x=[-sum(N) 1:sum(N)-1;1:sum(N)-1 10*sum(N)]-.5;x=x(:);"
+      MaskDisplay	      "disp('MPSK\\nmapping')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "[4]|[sqrt(2)]|[pi/4]|1"
+      MaskVariableAliases     ",,,"
+      System {
+	Name			"QPSK"
+	Location		[572, 160, 1070, 460]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [40, 35, 60, 55]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold1"
+	  Position		  [95, 29, 130, 61]
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  Lookup
+	  Name			  "imag part1"
+	  Position		  [190, 112, 225, 138]
+	  InputValues		  "x"
+	  OutputValues		  "y2"
+	}
+	Block {
+	  BlockType		  Lookup
+	  Name			  "real part"
+	  Position		  [195, 32, 230, 58]
+	  InputValues		  "x"
+	  OutputValues		  "y1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Real"
+	  Position		  [290, 35, 310, 55]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Imag"
+	  Position		  [290, 115, 310, 135]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold1"
+	  SrcPort		  1
+	  Points		  [0, 0; 25, 0]
+	  Branch {
+	    DstBlock		    "real part"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 80]
+	    DstBlock		    "imag part1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "real part"
+	  SrcPort		  1
+	  DstBlock		  "Real"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "imag part1"
+	  SrcPort		  1
+	  DstBlock		  "Imag"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "QPSK demap"
+      Ports		      [2, 1]
+      Position		      [585, 179, 660, 226]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "MPSK demapping"
+      MaskDescription	      "Reverse the QASK map. Input in-phase\nand quadr"
+"ature components from the\ntwo inputs. Output demapped signal."
+      MaskHelp		      "This block demaps a QASK mapped signal using ci"
+"rcle constellation. You can place this block after a QAM demodulation block. "
+"The circle constellation is defined in NIC, RIC, and PIC. The symbol interval"
+" can be a two elements vector with the first element being offset. The defaul"
+"t offset is zero. Use function MODMAP to view the constellation."
+      MaskPromptString	      "Number of symbols on each circle NIC::|Radii fo"
+"r each circle RIC:|Phase shift on each circle PIC (rad):|Symbol interval and "
+"offset (sec):"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVariables	      "N=@1;A=@2;P=@3;td=@4;"
+      MaskInitialization      "y1=apkconst(N,A,P);y2=imag(y1);y1=real(y1);"
+      MaskDisplay	      "disp('MPSK\\ndemapping')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "[4]|[sqrt(2)]|[pi/4]|1"
+      MaskVariableAliases     ",,,"
+      System {
+	Name			"QPSK demap"
+	Location		[104, 488, 602, 788]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "real"
+	  Position		  [20, 45, 40, 65]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "imag"
+	  Position		  [20, 130, 40, 150]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "Minimum1"
+	  Ports			  [1, 1]
+	  Position		  [390, 95, 450, 115]
+	  FunctionName		  "arymimai"
+	  Parameters		  "'min'"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  Ports			  [2, 1]
+	  Position		  [275, 55, 300, 75]
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [275, 140, 300, 160]
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [205, 48, 225, 77]
+	  ForegroundColor	  "red"
+	  IconShape		  "rectangular"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [345, 88, 365, 117]
+	  IconShape		  "rectangular"
+	  Inputs		  "++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum6"
+	  Ports			  [2, 1]
+	  Position		  [205, 133, 225, 162]
+	  ForegroundColor	  "blue"
+	  IconShape		  "rectangular"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [95, 39, 130, 71]
+	  ForegroundColor	  "red"
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold1"
+	  Position		  [95, 124, 130, 156]
+	  ForegroundColor	  "blue"
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "imag_pt"
+	  Position		  [140, 179, 165, 201]
+	  BackgroundColor	  "yellow"
+	  Value			  "y2"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "real_pt"
+	  Position		  [145, 94, 170, 116]
+	  BackgroundColor	  "green"
+	  Value			  "y1"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [470, 95, 490, 115]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Minimum1"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Minimum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -40]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, 30]
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum6"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    Points		    [0, 5]
+	    DstBlock		    "Product1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -5]
+	    DstBlock		    "Product1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  Points		  [0, 0; 15, 0]
+	  Branch {
+	    Points		    [0, 5]
+	    DstBlock		    "Product"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -5]
+	    DstBlock		    "Product"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "imag_pt"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -35]
+	  DstBlock		  "Sum6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold1"
+	  SrcPort		  1
+	  DstBlock		  "Sum6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "real_pt"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, -35]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "imag"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "real"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "QPSK demapping"
+      Ports		      [2, 1]
+      Position		      [580, 93, 660, 137]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "QASK C-demap"
+      MaskDescription	      "Reverse the QASK map. Input in-phase\nand quadr"
+"ature components from the\ntwo inputs. Output demapped signal."
+      MaskHelp		      "This block demaps a QASK mapped signal using ci"
+"rcle constellation. You can place this block after a QAM demodulation block. "
+"The circle constellation is defined in NIC, RIC, and PIC. The symbol interval"
+" can be a two elements vector with the first element being offset. The defaul"
+"t offset is zero. Use function MODMAP to view the constellation."
+      MaskPromptString	      "Number of symbols on each circle NIC::|Radii fo"
+"r each circle RIC:|Phase shift on each circle PIC (rad):|Symbol interval and "
+"offset (sec):"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskInitialization      "N=@1;A=@2;P=@3;td=@4;y1=apkconst(N,A,P);y2=imag"
+"(y1);y1=real(y1);"
+      MaskDisplay	      "disp('QASK\\nC-demap')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "[4]|[sqrt(2)]|[pi/4]|1"
+      MaskVariableAliases     ",,,"
+      System {
+	Name			"QPSK demapping"
+	Location		[96, 182, 645, 417]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "real"
+	  Position		  [45, 35, 65, 55]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "imag"
+	  Position		  [45, 120, 65, 140]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "Minimum1"
+	  Ports			  [1, 1]
+	  Position		  [415, 85, 475, 105]
+	  FunctionName		  "arymimai"
+	  Parameters		  "'min'"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product"
+	  Ports			  [2, 1]
+	  Position		  [300, 45, 325, 65]
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [300, 130, 325, 150]
+	  Inputs		  "2"
+	  Multiplication	  "Element-wise(.*)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum1"
+	  Ports			  [2, 1]
+	  Position		  [230, 38, 250, 67]
+	  ForegroundColor	  "red"
+	  IconShape		  "rectangular"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [370, 78, 390, 107]
+	  IconShape		  "rectangular"
+	  Inputs		  "++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum6"
+	  Ports			  [2, 1]
+	  Position		  [230, 123, 250, 152]
+	  ForegroundColor	  "blue"
+	  IconShape		  "rectangular"
+	  Inputs		  "+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold"
+	  Position		  [120, 29, 155, 61]
+	  ForegroundColor	  "red"
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold1"
+	  Position		  [120, 114, 155, 146]
+	  ForegroundColor	  "blue"
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "imag_pt"
+	  Position		  [165, 169, 190, 191]
+	  BackgroundColor	  "yellow"
+	  Value			  "y2"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "real_pt"
+	  Position		  [170, 84, 195, 106]
+	  BackgroundColor	  "green"
+	  Value			  "y1"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "out_1"
+	  Position		  [495, 85, 515, 105]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Minimum1"
+	  SrcPort		  1
+	  DstBlock		  "out_1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Minimum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -40]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, 30]
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum6"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [0, -5]
+	    DstBlock		    "Product1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 5]
+	    DstBlock		    "Product1"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum1"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [0, -5]
+	    DstBlock		    "Product"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 5]
+	    DstBlock		    "Product"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "imag_pt"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -35]
+	  DstBlock		  "Sum6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold1"
+	  SrcPort		  1
+	  DstBlock		  "Sum6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold"
+	  SrcPort		  1
+	  DstBlock		  "Sum1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "real_pt"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, -35]
+	  DstBlock		  "Sum1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "imag"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "real"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "Random\nSource"
+      Ports		      [0, 1]
+      Position		      [55, 116, 90, 154]
+      Diagnostics	      "AllowInheritedTsInSrc"
+      FunctionName	      "sdsprandsrc2"
+      Parameters	      "SrcType,Min,Max,Mean,Var,SFcnSeed,Inherit,SampM"
+"ode,SampTime,SampFrame,OutComplex,RepMode,Seed"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+      MaskType		      "Random Source"
+      MaskDescription	      "Output a random signal with uniform or Gaussian"
+" (normal) distribution.  Set output repeatability to Nonrepeatable (block ran"
+"domly selects initial seed every time simulation starts), Repeatable (block r"
+"andomly selects initial seed once and uses it every time simulation starts), "
+"or Specify seed (block uses specified initial seed every time simulation star"
+"ts, producing repeatable output)."
+      MaskHelp		      "web(dspbhelp);"
+      MaskPromptString	      "Source type:|Minimum:|Maximum:|Mean:|Variance:|"
+"Repeatability:|Initial seed:|Inherit output port attributes|Sample mode: |Sam"
+"ple time:|Samples per frame:|Output complexity:"
+      MaskStyleString	      "popup(Uniform|Gaussian),edit,edit,edit,edit,pop"
+"up(Specify seed|Repeatable|Not repeatable),edit,checkbox,popup(Discrete|Conti"
+"nuous),edit,edit,popup(Real|Complex)"
+      MaskTunableValueString  "off,on,on,on,on,off,off,off,off,off,off,off"
+      MaskCallbackString      "dspblkrandsrc2;|||||dspblkrandsrc2;||dspblkrand"
+"src2;|dspblkrandsrc2;|||"
+      MaskEnableString	      "on,on,on,off,off,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on,on,on,on"
+      MaskVariables	      "SrcType=@1;Min=@2;Max=@3;Mean=@4;Var=@5;RepMode"
+"=@6;Seed=@7;Inherit=@8;SampMode=@9;SampTime=@10;SampFrame=@11;OutComplex=@12"
+      MaskInitialization      "[x,y]=dspblkrandsrc2('icon');SFcnSeed=eval(dspb"
+"lkrandsrc2('seed'),'Seed');"
+      MaskDisplay	      "plot(x,y);\n"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "Gaussian|0|1|0|1|Specify seed|seed|on|Discrete|"
+"1|1|Real"
+      MaskVariableAliases     ",,,,,,,,,,,"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Signal space\nconstellation"
+      Ports		      [1, 2]
+      Position		      [425, 93, 505, 137]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "QASK C-map"
+      MaskDescription	      "QASK mapping with circle constellation. The con"
+"stellation is defined in NIC, RIC and PIC."
+      MaskHelp		      "This block maps a digital signal onto in-phase "
+"and quadratic components, which are outputs in the first and second output po"
+"rt respectively. The circle constellation is defined in NIC, RIC, and PIC. Th"
+"e input symbol interval can be a two-element vector with the second element b"
+"eing offset. The default value offset is 0. Use the MODMAP function to see th"
+"e constellation."
+      MaskPromptString	      "Number of symbols in each circle NIC:|Radii in "
+"each circle RIC:|Phase shift in each circle PIC (rad):|Symbol interval and of"
+"fset (sec):"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskInitialization      "N=@1;A=@2;P=@3;td=@4;y1=apkconst(N,A,P);y1=[y1;"
+"y1];y1=y1(:);y2=imag(y1);y1=real(y1);x=[-sum(N) 1:sum(N)-1;1:sum(N)-1 10*sum("
+"N)]-.5;x=x(:);"
+      MaskDisplay	      "disp('QASK\\nC-map')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "[4]|[sqrt(2)]|[pi/4]|1"
+      MaskVariableAliases     ",,,"
+      System {
+	Name			"Signal space\nconstellation"
+	Location		[58, 103, 468, 327]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [25, 20, 45, 40]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold1"
+	  Position		  [80, 14, 115, 46]
+	  SampleTime		  "td"
+	}
+	Block {
+	  BlockType		  Lookup
+	  Name			  "imag part1"
+	  Position		  [175, 97, 210, 123]
+	  InputValues		  "x"
+	  OutputValues		  "y2"
+	}
+	Block {
+	  BlockType		  Lookup
+	  Name			  "real part"
+	  Position		  [180, 17, 215, 43]
+	  InputValues		  "x"
+	  OutputValues		  "y1"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Real"
+	  Position		  [275, 20, 295, 40]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Imag"
+	  Position		  [275, 100, 295, 120]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold1"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [0, 80]
+	    DstBlock		    "imag part1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "real part"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "real part"
+	  SrcPort		  1
+	  DstBlock		  "Real"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "imag part1"
+	  SrcPort		  1
+	  DstBlock		  "Imag"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "transmitter\ndiagrams"
+      Ports		      [1]
+      Position		      [45, 25, 100, 65]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Diagrams"
+      MaskDescription	      "Eye pattern,  signal-space trajectory and scatt"
+"er plot"
+      MaskPromptString	      "Plot start time:|samples per time slot|decision"
+" offset"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "starttime=@1;anzahl=@2;offset=@3;"
+      MaskInitialization      " [x, y] = srcsicon(10);"
+      MaskDisplay	      "plot(0,0,100,100,x,y)"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "6|40|0"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"transmitter\ndiagrams"
+	Location		[638, 293, 1006, 534]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [35, 40, 55, 60]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [35, 130, 55, 150]
+	  Value			  "Inf"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [130, 130, 150, 150]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Eye pattern \ntransmitter"
+	  Ports			  [1]
+	  Position		  [275, 37, 330, 73]
+	  CopyFcn		  "eyesampl([],[],[],'CopyBlock')"
+	  DeleteFcn		  "eyesampl([],[],[],'DeleteBlock')"
+	  LoadFcn		  "eyesampl([],[],[],'LoadBlock')"
+	  StartFcn		  "eyesampl([],[],[],'Start')"
+	  StopFcn		  "eyesampl([],[],[],'Stop')"
+	  NameChangeFcn		  "eyesampl([],[],[],'NameChange')"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Eye-diagram/scatter plot"
+	  MaskDescription	  "Produce eye-pattern diagram and/or scatter "
+"plot."
+	  MaskHelp		  "This plot opens one, or two plots by assign"
+"ing the line type parameters. The scatter plot point is selected by the decis"
+"ion point in the first parameter entry. A decision line is drawn in the eye-p"
+"attern diagram. The plot is updated at the plot update sample time point."
+	  MaskPromptString	  "[Symbol interval, plot offset, decision poi"
+"nt offset]:|Lower and upper bound of in-coming signal (1x2 vector):|Number of"
+" saved traces:|Line-type for eye-pattern diagram (0 for no plot):|Line-type f"
+"or scatter plot (0 for no plot):|Plot update sample time:"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||"
+	  MaskEnableString	  "on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on"
+	  MaskInitialization	  "time_range=@1;boundary=@2;kept_length=@3;ey"
+"e_line=@4;scatter_line=@5;two_d_line=@6;[x,y]=srcsicon(10);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "[2 0 1+offset]|[-1.5 1.5]|0|'w-/r-'|0|2/anz"
+"ahl"
+	  MaskVariableAliases	  ",,,,,"
+	  System {
+	    Name		    "Eye pattern \ntransmitter"
+	    Location		    [116, 253, 411, 439]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [75, 80, 95, 100]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Plot1"
+	      Ports		      [1]
+	      Position		      [130, 70, 200, 110]
+	      FunctionName	      "eyesampl"
+	      Parameters	      "time_range, boundary, kept_length, eye_"
+"line, scatter_line, two_d_line"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      DstBlock		      "Plot1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [185, 36, 220, 69]
+	  Inputs		  "2"
+	  DisplayOption		  "none"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux1"
+	  Ports			  [2, 1]
+	  Position		  [185, 96, 220, 129]
+	  Inputs		  "2"
+	  DisplayOption		  "none"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Scatter plot\ntransmitter"
+	  Ports			  [1]
+	  Position		  [275, 173, 330, 207]
+	  CopyFcn		  "eyesampl([],[],[],'CopyBlock')"
+	  DeleteFcn		  "eyesampl([],[],[],'DeleteBlock')"
+	  LoadFcn		  "eyesampl([],[],[],'LoadBlock')"
+	  StartFcn		  "eyesampl([],[],[],'Start')"
+	  StopFcn		  "eyesampl([],[],[],'Stop')"
+	  NameChangeFcn		  "eyesampl([],[],[],'NameChange')"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Eye-diagram/scatter plot"
+	  MaskDescription	  "Produce eye-pattern diagram and/or scatter "
+"plot."
+	  MaskHelp		  "This plot opens one, or two plots by assign"
+"ing the line type parameters. The scatter plot point is selected by the decis"
+"ion point in the first parameter entry. A decision line is drawn in the eye-p"
+"attern diagram. The plot is updated at the plot update sample time point."
+	  MaskPromptString	  "[Symbol interval, plot offset, decision poi"
+"nt offset]:|Lower and upper bound of in-coming signal (1x2 vector):|Number of"
+" saved traces:|Line-type for eye-pattern diagram (0 for no plot):|Line-type f"
+"or scatter plot (0 for no plot):|Plot update sample time:"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||"
+	  MaskEnableString	  "on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on"
+	  MaskInitialization	  "time_range=@1;boundary=@2;kept_length=@3;ey"
+"e_line=@4;scatter_line=@5;two_d_line=@6;[x,y]=srcsicon(10);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "[1 .5 .999]|[-1.5 1.5]|0|0|'b.'|[.5 offset]"
+	  MaskVariableAliases	  ",,,,,"
+	  System {
+	    Name		    "Scatter plot\ntransmitter"
+	    Location		    [165, 242, 460, 428]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [75, 80, 95, 100]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Plot1"
+	      Ports		      [1]
+	      Position		      [130, 70, 200, 110]
+	      FunctionName	      "eyesampl"
+	      Parameters	      "time_range, boundary, kept_length, eye_"
+"line, scatter_line, two_d_line"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      DstBlock		      "Plot1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Step
+	  Name			  "Step input"
+	  Position		  [35, 85, 55, 105]
+	  Time			  "starttime"
+	  Before		  "0"
+	  After			  "1"
+	  SampleTime		  "1"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Switch"
+	  Position		  [110, 44, 135, 76]
+	  Threshold		  "1"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Trajectory\ntransmitter"
+	  Ports			  [2]
+	  Position		  [275, 105, 330, 140]
+	  CopyFcn		  "eyediasi([],[],[],'CopyBlock')"
+	  DeleteFcn		  "eyediasi([],[],[],'DeleteBlock')"
+	  LoadFcn		  "eyediasi([],[],[],'LoadBlock')"
+	  StartFcn		  "eyediasi([],[],[],'Start')"
+	  StopFcn		  "eyediasi([],[],[],'Stop')"
+	  NameChangeFcn		  "eyediasi([],[],[],'NameChange')"
+	  ShowPortLabels	  off
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "Eye-diagram/scatter plot"
+	  MaskDescription	  "Produce eye-pattern diagram/scatter\nplot/x"
+"-y plot with the rising edge of the second input as the decision line."
+	  MaskHelp		  "This plot opens one, two, or three plots by"
+" assigning the line type parameters. The scatter plot point is selected by th"
+"e rising edge of a trigger signal. A decision line is drawn at the rising edg"
+"e of the trigger signal."
+	  MaskPromptString	  "Eye-pattern plot time frame:|Lower and uppe"
+"r bound of in-coming signal (1x2 vector):|Number of saved traces:|Line-type f"
+"or eye-pattern diagram (0 for no plot):|Line-type for scatter plot (0 for no "
+"plot):|Line-type for x-y plot (0 for no plot):"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on"
+	  MaskCallbackString	  "|||||"
+	  MaskEnableString	  "on,on,on,on,on,on"
+	  MaskVisibilityString	  "on,on,on,on,on,on"
+	  MaskToolTipString	  "on,on,on,on,on,on"
+	  MaskInitialization	  "time_range=@1;boundary=@2;kept_length=@3;ey"
+"e_line=@4;scatter_line=@5;two_d_line=@6;[x,y]=srcsicon(10);[v,w]=trigicon(0,2"
+"5,get_param(gcb,'orientation'),2);"
+	  MaskDisplay		  "plot(0,0,100,100,x,y,v,w);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "[2 0 1]|[-1.5 1.5]|0|0|0|'g-'"
+	  MaskVariableAliases	  ",,,,,"
+	  System {
+	    Name		    "Trajectory\ntransmitter"
+	    Location		    [165, 242, 460, 428]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_1"
+	      Position		      [15, 55, 35, 75]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in_2"
+	      Position		      [20, 115, 40, 135]
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      Ports		      [2, 1]
+	      Position		      [65, 70, 100, 105]
+	      Inputs		      "2"
+	      DisplayOption	      "none"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Plot1"
+	      Ports		      [1]
+	      Position		      [130, 70, 200, 110]
+	      FunctionName	      "eyediasi"
+	      Parameters	      "time_range, boundary, kept_length, eye_"
+"line, scatter_line, two_d_line"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Plot1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "in_2"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "in_1"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, 15]
+	      DstBlock		      "Mux"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Eye pattern \ntransmitter"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "Switch"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Step input"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -35]
+	  DstBlock		  "Switch"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [35, 0]
+	  DstBlock		  "Switch"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Mux1"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [0, 75]
+	    DstBlock		    "Scatter plot\ntransmitter"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Trajectory\ntransmitter"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [10, 0; 0, -20]
+	  Branch {
+	    DstBlock		    "Mux1"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -75]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Switch"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "Mux1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	}
+      }
+    }
+  }
+}
