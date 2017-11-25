@@ -2,4 +2,4 @@
 This Repository is for my My Matlab Simulation.
 
 ##
-#Creating a new branch is quick and simple.
+###根目录下两个文件是采用A律13折线的PCM编码子函数。
