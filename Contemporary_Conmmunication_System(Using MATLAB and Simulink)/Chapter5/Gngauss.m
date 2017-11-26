@@ -1,4 +1,4 @@
-function [gsrv1,gsrv2]=gngauss(m,sgma)
+function [gsrv1,gsrv2]=Gngauss(m,sgma)
 % [gsrv1,gsrv2]=gngauss(m,sgma)
 % [gsrv1,gsrv2]=gngauss(sgma)
 % [gsrv1,gsrv2]=gngauss
@@ -7,9 +7,9 @@ function [gsrv1,gsrv2]=gngauss(m,sgma)
 %   		it takes the mean as 0, and the standard deviation as the given parameter.
 %   		If neither mean nor the variance is given, it generates two standard
 %   		Gaussian random variables. 
-if nargin == 0,
+if nargin == 0
   m=0; sgma=1;
-elseif nargin == 1,
+elseif nargin == 1
   sgma=m; m=0;
 end;
 u=rand;                         	% a uniform random variable in (0,1)       

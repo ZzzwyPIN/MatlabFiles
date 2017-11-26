@@ -1,4 +1,7 @@
 % MATLAB script for Illustrated Problem 5.7.1
+clc
+clear
+
 echo on
 n0=.1*randn(100,1);
 n1=.1*randn(100,1);

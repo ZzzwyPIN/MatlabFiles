@@ -1,15 +1,19 @@
 % MATLAB script for Illustrated Problem 5.8.
- 
+clc
+clear
+
 echo on
 SNRindB1=0:1:12;	  		
-SNRindB2=0:0.1:12;			
-for i=1:length(SNRindB1),
+SNRindB2=0:0.1:12;	
+smld_err_prb=zeros(1,length(SNRindB1));
+for i=1:length(SNRindB1)
   % simulated error rate 
-  smld_err_prb(i)=smldPe58(SNRindB1(i));    
+  smld_err_prb(i)=Smldpe58(SNRindB1(i));    
   echo off;
 end;
 echo on;
-for i=1:length(SNRindB2),
+theo_err_prb=zeros(1,length(SNRindB2));
+for i=1:length(SNRindB2)
   % signal-to-noise ratio
   SNR_per_bit=exp(SNRindB2(i)*log(10)/10);  
   % theoretical error rate
