@@ -2,14 +2,14 @@
 echo on
 SNRindB1=0:2:10;
 SNRindB2=0:0.1:10;
-for i=1:length(SNRindB1),
-  [pb,ps]=cm_sm32(SNRindB1(i));    	% simulated bit and symbol error rates
+for i=1:length(SNRindB1)
+  [pb,ps]=Cm_sm32(SNRindB1(i));    	% simulated bit and symbol error rates
   smld_bit_err_prb(i)=pb; 
   smld_symbol_err_prb(i)=ps;
   echo off ;
 end;
 echo on;
-for i=1:length(SNRindB2),
+for i=1:length(SNRindB2)
   SNR=exp(SNRindB2(i)*log(10)/10);     	% signal-to-noise ratio
   theo_err_prb(i)=Qfunct(sqrt(2*SNR)); 	% theoretical bit-error rate
   echo off ;

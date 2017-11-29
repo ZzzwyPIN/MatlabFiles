@@ -31,6 +31,9 @@ A=reshape(A,N,M);
 %noise_power=10*log10(N)-SNR;
 SNR=5;
 D=awgn(A,SNR,'measured');
+
+
+
 b=C*D;
 
 errors(1,K)=countError(b,B,K,M);
