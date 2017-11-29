@@ -1,9 +1,7 @@
 clc
 clear
 
-Y=30;
-errors=zeros(1,Y);
-for K=1:Y %K表示用户数量。
+K=30; %K表示用户数量。
 %.....产生K个用户扩频码......%
 pntaps1=[1 0 0 0 0 1];
 pntaps2=[1 1 0 0 1 1];
@@ -27,19 +25,19 @@ A=zeros(1,N*M);
         end
  end
 A=reshape(A,N,M);
+for SNRindB=0:12
 
-%noise_power=10*log10(N)-SNR;
-SNR=5;
-D=awgn(A,SNR,'measured');
+%noise_power=10*log10(N)-SNR
+D=awgn(A,SNRindB,'measured');
 b=C*D;
 
-errors(1,K)=countError(b,B,K,M);
+errors(SNRindB+1)=countError(b,B,K,M);
 end;
 
-users=1:K;
-semilogy(users,errors,'b-+');
-title('信噪比一定时,用户数和误码率的关系');
-xlabel('用户数K');
+snr=0:12;
+semilogy(snr,errors,'b-+');
+title('用户数一定时,信噪比和误码率的关系');
+xlabel('信噪比(dB)');
 ylabel('误比特率BER');
 
 
