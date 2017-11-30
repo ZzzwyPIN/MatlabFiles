@@ -14,6 +14,12 @@ for i=1:K
 end;
 
 C=2*C-1;
+r=zeros(30,30);
+for i=1:30
+    for j=1:30
+        r(i,j)=C(i,:)*C(j,:)';
+    end
+end
 N=2^length(pntaps1)-1;
 M=10000;
 B=2*randi([0,1],K,M)-ones(K,M);
@@ -34,11 +40,11 @@ b=C*D;
 errors(SNRindB+1)=countError(b,B,K,M);
 end;
 
-snr=0:12;
-semilogy(snr,errors,'b-+');
-title('用户数一定时,信噪比和误码率的关系');
-xlabel('信噪比(dB)');
-ylabel('误比特率BER');
+% snr=0:12;
+% semilogy(snr,errors,'b-+');
+% title('用户数一定时,信噪比和误码率的关系');
+% xlabel('信噪比(dB)');
+% ylabel('误比特率BER');
 
 
             
