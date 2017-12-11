@@ -1,4 +1,7 @@
 % MATLAB script for Illustrative Problem 6.2.
+clc
+clear
+
 echo on
 T=1;
 delta_f=1/(100*T);		

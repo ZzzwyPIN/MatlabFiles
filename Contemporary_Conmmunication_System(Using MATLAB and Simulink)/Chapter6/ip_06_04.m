@@ -1,4 +1,7 @@
 % MATLAB script for Illustrative Problem 6.4.
+clc
+clear
+
 echo on
 Length=101;
 Fs=10000;
