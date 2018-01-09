@@ -33,18 +33,18 @@ A=zeros(1,N*M);
 A=reshape(A,N,M);
 for SNRindB=0:12
 
-%noise_power=10*log10(N)-SNR
+
 D=awgn(A,SNRindB,'measured');
 b=C*D;
 
 errors(SNRindB+1)=countError(b,B,K,M);
 end;
 
-% snr=0:12;
-% semilogy(snr,errors,'b-+');
-% title('用户数一定时,信噪比和误码率的关系');
-% xlabel('信噪比(dB)');
-% ylabel('误比特率BER');
+snr=0:12;
+semilogy(snr,errors,'b-+');
+title('用户数一定时,信噪比和误码率的关系');
+xlabel('信噪比(dB)');
+ylabel('误比特率BER');
 
 
             
