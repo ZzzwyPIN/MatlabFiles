@@ -14,12 +14,6 @@ for i=1:K
 end;
 
 C=2*C-1;
-r=zeros(30,30);
-for i=1:30
-    for j=1:30
-        r(i,j)=C(i,:)*C(j,:)';
-    end
-end
 N=2^length(pntaps1)-1;
 M=10000;
 B=2*randi([0,1],K,M)-ones(K,M);
