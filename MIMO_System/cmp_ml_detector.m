@@ -1,6 +1,6 @@
 function [symbol_err_rate,Shat,err_nbr] = cmp_ml_detector(Y,H,symbols,S)
 Modu_mode = length(symbols);
-[N,M] = size(H);
+[~,M] = size(H);
 Total = Modu_mode^M;
 
 for idx = 1:M
